@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,13 +11,13 @@ body {
 }
 
 h1, h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
     width:100%;
     color:rgb(0, 100, 150);
     margin-top: 50px;
     margin-bottom: 10px;
     padding-bottom: 3px;
-    font-family: 'Lato-Bold', sans-serif;
-    font-size: 1.7rem;
     border-bottom: 3px solid rgba(0, 100, 150, 0.4);
 }
 
@@ -30,4 +27,19 @@ h1, h2 {
 
 .k5_portfolio .card img {
     border-bottom: dotted 1px rgba(150, 150, 150);
+}
+
+.k5_skills {
+    font-family: 'Inconsolata', monospace;
+}
+
+.k5_links {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.1rem;
+}
+
+.k5_position {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+
 }

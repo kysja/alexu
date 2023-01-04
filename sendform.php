@@ -21,7 +21,7 @@ if (!empty($_POST)) {
     $name = trim(stripslashes(htmlspecialchars($_POST['name'])));
     $email = trim(stripslashes(htmlspecialchars($_POST['email'])));
     $message = nl2br(trim(stripslashes(htmlspecialchars($_POST['message']))));
-    $subject = "Message from _______";
+    $subject = "Message from alexu.dev";
 
     // validate the form fields
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $error['email']  = "Invalid email address";
@@ -44,7 +44,7 @@ if (!empty($_POST)) {
             exit();
         }
 
-        $body = "Name: $name <br> Email: $email <br> Message: $message";
+        $body = "Name: $name <br>Email: $email <br><br> Message:<br>$message";
 
 
         // send the email using SendGrid

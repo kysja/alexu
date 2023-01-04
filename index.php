@@ -9,13 +9,18 @@
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@400;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/lib/fontawesome6/css/all.min.css">
+
+    <link rel="stylesheet" href="/resources/css/main.css">
     
     <script src="/resources/js/bootstrap.bundle.min.js"></script>
+    
     <title>Alex U - Full Stack Web Developer</title>
-
 </head>
 <body>
     
@@ -43,29 +48,29 @@
             <div class="col-md-3 text-center">
                 <aside>
                     <div class="mt-5"><img class="img-fluid rounded rounded-2" src="/resources/images/me.jpg" alt="Alex"></div>
-                    <div class="mt-2 fw-normal fs-4">Hello, I'm Alex</div>
-                    <div class="mt-2 mb-4 fw-bold fs-5">Full Stack Web Developer</div>
+                    <div class="mt-2 fw-normal fs-5">Hello, I'm Alex</div>
+                    <div class="k5_position mt-2 mb-4">Full Stack Web Developer</div>
                     
                     <div class="mt-5 text-start ps-4">
                         <div class="my-3">
                             <i class="me-2 fa-solid fa-location-dot"></i>
-                            Jacksonvile, Florida, US
+                            <span class="k5_links">Jacksonvile, Florida, US</span>
                         </div>
                         <div class="my-3">
                             <i class="me-2 fa-solid fa-globe"></i>
-                            <a class="text-decoration-none text-black" href="https://alexu.dev">alexu.dev</a>
+                            <a class="text-decoration-none text-black k5_links" href="https://alexu.dev">alexu.dev</a>
                         </div>
                         <div class="my-3">
                             <i class="me-2 fa-solid fa-envelope"></i>
-                            <a class="text-decoration-none text-black" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
+                            <a class="text-decoration-none text-black k5_links" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
                         </div>
                         <div class="my-3">
                             <i class="me-2 fa-brands fa-linkedin"></i>
-                            <a class="text-decoration-none text-black" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
+                            <a class="text-decoration-none text-black k5_links" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
                         </div>
                         <div class="my-3">
                             <i class="me-2 fa-brands fa-github"></i>
-                            <a class="text-decoration-none text-black" href="https://github.com/kysja">GitHub</a>
+                            <a class="text-decoration-none text-black k5_links" href="https://github.com/kysja">GitHub</a>
                         </div>
                     </div>
 
@@ -82,10 +87,10 @@
                 <section>
                     <h2>Skills</h2>
                     <div class="w-75">
-                        <div class="border-bottom py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span><span class="text-black-50">Main stack:</span> PHP, MySQL, HTML, CSS, Javascript, jQuery, Bootstrap</div>
-                        <div class="border-bottom py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span><span class="text-black-50">Frameworks:</span> Laravel (PHP), Flask (Python)</div>
-                        <div class="border-bottom py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span><span class="text-black-50">Other:</span> SEO, MVC, JSON, Rest API, Git</div>
-                        <div class="border-bottom py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span>Digital Ocean, Linode</div>
+                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Main stack:</span> PHP, MySQL, HTML, CSS, Javascript, jQuery, Bootstrap</span></div>
+                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Frameworks:</span> Laravel (PHP), Flask (Python)</span></div>
+                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Other:</span> SEO, MVC, JSON, Rest API, Git</span></div>
+                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Deploy:</span> Digital Ocean, Linode, Ubuntu, Nginx, Apache</span></div>
                     </div>
                 </section>
 
@@ -103,7 +108,7 @@
 
                     <div class="mt-5">
                         <div class="my-1 fw-bold">2007 &ndash; 2016 &middot; Online Plumbing Store Mirsanteh</div>
-                        <div class="mb-3">Full Stack Web Developer</div>
+                        <div class="mb-3">Full Stack Web Developer &middot; Part-Time</div>
                         <div>
                             I joined a small brick and mortar plumbing store with only three employees.<br>
                             Within about five years, we became one of the top-3 Russian online plumbing stores.<br>
@@ -236,9 +241,9 @@
                         <section>
                             <h2>Interests</h2>
                             <div class="w-75">
-                                <div class="py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span>Playing soccer</div>
-                                <div class="py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span>Woodworking</div>
-                                <div class="py-2"><span class="material-symbols-rounded me-2 align-bottom">check</span>Chess</div>
+                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Playing soccer</div>
+                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Woodworking</div>
+                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Chess</div>
                             </div>
                         </section>
                     </div>
