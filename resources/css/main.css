@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.95rem;
@@ -18,3 +24,10 @@ h1, h2 {
     border-bottom: 3px solid rgba(0, 100, 150, 0.4);
 }
 
+.k5_portfolio .card {
+    height: 290px;    
+}
+
+.k5_portfolio .card img {
+    border-bottom: dotted 1px rgba(150, 150, 150);
+}
