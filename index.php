@@ -1,3 +1,6 @@
+<?php
+    include 'sendform.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,30 +22,31 @@
     <div class="container border bg-white shadow">
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <div class="mt-5"><img class="img-fluid rounded rounded-2" src="/resources/images/me.jpg" alt="Alex"></div>
-                <div class="mt-2 fw-normal fs-4">Hello, I'm Alex</div>
-                <div class="mt-2 mb-4 fw-bold fs-5">Full Stack Web Developer</div>
-                
-                <div class="mt-5 text-start ps-4">
-                    <div class="my-3">
-                        <span class="material-symbols-rounded align-bottom">location_on</span>
-                        Jacksonvile, Florida, US
-                    </div>
-                    <div class="my-3">
-                        <span class="material-symbols-rounded align-bottom">language</span>
-                        <a class="text-decoration-none text-black" href="https://alexu.dev">alexu.dev</a>
-                    </div>
-                    <div class="my-3">
-                        <span class="material-symbols-rounded align-bottom">mail</span>
-                        <a class="text-decoration-none text-black" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
-                    </div>
-                    <div class="my-3">
-                        <img src="/resources/images/linkedin-48.png" alt="Linkedin" width="24">
-                        <a class="text-decoration-none text-black" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
-                    </div>
+                <aside>
+                    <div class="mt-5"><img class="img-fluid rounded rounded-2" src="/resources/images/me.jpg" alt="Alex"></div>
+                    <div class="mt-2 fw-normal fs-4">Hello, I'm Alex</div>
+                    <div class="mt-2 mb-4 fw-bold fs-5">Full Stack Web Developer</div>
                     
-                </div>
+                    <div class="mt-5 text-start ps-4">
+                        <div class="my-3">
+                            <span class="material-symbols-rounded align-bottom">location_on</span>
+                            Jacksonvile, Florida, US
+                        </div>
+                        <div class="my-3">
+                            <span class="material-symbols-rounded align-bottom">language</span>
+                            <a class="text-decoration-none text-black" href="https://alexu.dev">alexu.dev</a>
+                        </div>
+                        <div class="my-3">
+                            <span class="material-symbols-rounded align-bottom">mail</span>
+                            <a class="text-decoration-none text-black" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
+                        </div>
+                        <div class="my-3">
+                            <img src="/resources/images/linkedin-48.png" alt="Linkedin" width="24">
+                            <a class="text-decoration-none text-black" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
+                        </div>
+                    </div>
 
+                </aside>
             </div>
             
             <div class="col-md-9">
@@ -64,9 +68,6 @@
 
                 <section>
                     <h2>Experience</h2>
-
-                    
-                    
                     
                     <div class="mt-4">
                         <div class="my-1 fw-bold">2003 &ndash; 2022 &middot; Freelance</div>
@@ -103,7 +104,7 @@
                     <div class="k5_portfolio mt-2 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                         <div class="col">
-                            <a href="/portfolio/palliq.html" class="text-decoration-none text-dark">
+                            <!-- <a href="/portfolio/palliq.html" class="text-decoration-none text-dark"> -->
                                 <div class="card">
                                         <img src="/resources/images/portfolio/thumb_palliq.png" alt="Pallet Liquidation" class="card-img-top">
                                     <div class="card-body">
@@ -116,11 +117,11 @@
                                     </div>
                                     </div>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
 
                         <div class="col">
-                            <a href="/portfolio/irimex.html" class="text-decoration-none text-dark">
+                            <!-- <a href="/portfolio/irimex.html" class="text-decoration-none text-dark"> -->
                                 <div class="card">
                                     <img src="/resources/images/portfolio/thumb_irimex.png" alt="Engineering Company" class="card-img-top">
                                     <div class="card-body">
@@ -132,7 +133,7 @@
                                     </div>
                                     </div>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
 
                         <!-- <div class="col">
@@ -153,7 +154,7 @@
                         </div> -->
 
                         <div class="col">
-                            <a href="/portfolio/bitfifo.html" class="text-decoration-none text-dark">
+                            <!-- <a href="/portfolio/bitfifo.html" class="text-decoration-none text-dark"> -->
                                 <div class="card">
                                     <img src="/resources/images/portfolio/thumb_bitfifo.png" alt="Tool for accountant department" class="card-img-top">
                                     <div class="card-body">
@@ -165,7 +166,7 @@
                                     </div>
                                     </div>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
 
                     </div>
@@ -188,7 +189,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <section>
+                        <section> 
                             <h2>Languages</h2>
                             <ul class="list-group list-group-horizontal my-3">
                                 <li class="list-group-item">English</li>
@@ -224,7 +225,7 @@
 
                 <section>
                     <h2>Contact Me</h2>
-                    <form action="/contact.php">
+                    <form method="post" action="/">
                         <div class="row g-3">
 
                             <div class="col-sm-6">
@@ -238,22 +239,22 @@
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="flEmail" name="email" placeholder="" value="">
                                     <label for="flEmail">Your Email</label>
+                                    <div class="text-danger"><?= $error['email'] ?? "" ?></div>
                                 </div>
                             </div>
                 
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="flSubject" name="subject" placeholder="" value="">
-                                    <label for="flSubject">Subject</label>
+                                    <textarea class="form-control" name="message" id="flMessage" rows="5" style="height: 180px;"></textarea>
+                                    <label for="flMessage">Message</label>
+                                    <div class="text-danger"><?= $error['message'] ?? "" ?></div>
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" name="message" id="flMessage" rows="5" style="height: 180px;"></textarea>
-                                    <label for="flMessage">Message</label>
-                                </div>
+                                <button type="submit" class="btn btn-primary">Send</button>
                             </div>
+
                         </div>
                     </form>
                 </section>
