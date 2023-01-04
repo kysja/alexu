@@ -11,11 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/main.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/lib/fontawesome6/css/all.min.css">
     
     <script src="/resources/js/bootstrap.bundle.min.js"></script>
-    <title>Alex U</title>
+    <title>Alex U - Full Stack Web Developer</title>
 
 </head>
 <body>
@@ -49,20 +48,24 @@
                     
                     <div class="mt-5 text-start ps-4">
                         <div class="my-3">
-                            <span class="material-symbols-rounded align-bottom">location_on</span>
+                            <i class="me-2 fa-solid fa-location-dot"></i>
                             Jacksonvile, Florida, US
                         </div>
                         <div class="my-3">
-                            <span class="material-symbols-rounded align-bottom">language</span>
+                            <i class="me-2 fa-solid fa-globe"></i>
                             <a class="text-decoration-none text-black" href="https://alexu.dev">alexu.dev</a>
                         </div>
                         <div class="my-3">
-                            <span class="material-symbols-rounded align-bottom">mail</span>
+                            <i class="me-2 fa-solid fa-envelope"></i>
                             <a class="text-decoration-none text-black" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
                         </div>
                         <div class="my-3">
-                            <img src="/resources/images/linkedin-48.png" alt="Linkedin" width="24">
+                            <i class="me-2 fa-brands fa-linkedin"></i>
                             <a class="text-decoration-none text-black" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
+                        </div>
+                        <div class="my-3">
+                            <i class="me-2 fa-brands fa-github"></i>
+                            <a class="text-decoration-none text-black" href="https://github.com/kysja">GitHub</a>
                         </div>
                     </div>
 
