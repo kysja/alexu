@@ -19,7 +19,27 @@
 
 </head>
 <body>
+    
     <div class="container border bg-white shadow">
+        
+        <!-- flash message -->
+        <?php if (isset($flash)) : ?>
+            <div class="my-3 alert alert-<?= $flash['type'] ?> alert-dismissible fade show text-center" role="alert">
+                <strong><?= $flash['message'] ?></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <script>
+                setTimeout(() => {
+                    document.querySelector('.alert').classList.remove('show');
+                    setTimeout(() => {
+                        document.querySelector('.alert').classList.add('d-none');
+                    }, 500);
+                }, 4000);
+            </script>
+        <?php endif; ?>
+        <!-- end of flash message -->
+        
+
         <div class="row mb-5">
             <div class="col-md-3 text-center">
                 <aside>
@@ -53,7 +73,7 @@
                 
                 <section>
                     <h2>About Me</h2>
-                    <p>I am a full stack web developer with more than fifteen years of hands-on experience. Focused and efficient learner with practical expertise. Seeking a full stack developer position.</p>
+                    <p>I am a full stack web developer with more than fifteen years of hands-on experience. Focused and efficient learner with practical expertise. </p>
                 </section>
 
                 <section>
@@ -73,8 +93,8 @@
                         <div class="my-1 fw-bold">2003 &ndash; 2022 &middot; Freelance</div>
                         <div class="mb-3">Full Stack Web Developer</div>
                         <div>
-                            I have worked with numerous companies over the years. <br>
                             Backend (PHP, MySQL) and frontend (HTML, CSS, Javascript, jQuery, Bootstrap) development, website deployment, search engine optimization, and running advertising campaigns. Monthly technical maintenance. <br>
+                            I have worked with numerous companies over the years. <br>
                         </div>
                     </div>
 
@@ -224,6 +244,7 @@
 
 
                 <section>
+                    <a name="contact"></a>
                     <h2>Contact Me</h2>
                     <form method="post" action="/">
                         <div class="row g-3">

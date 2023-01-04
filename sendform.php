@@ -1,24 +1,43 @@
 <?php
+session_start();
 
+// check if error messages are in the session
+if (isset($_SESSION['error'])) {
+    $error = $_SESSION['error'];
+    unset($_SESSION['error']);
+}
+
+// check if flash message are in the session
+if (isset($_SESSION['flash'])) {
+    $flash = $_SESSION['flash'];
+    unset($_SESSION['flash']);
+}
+
+
+// check if the form has been submitted
 if (!empty($_POST)) {
     
-    function check_data($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-    
+    // get the form fields
     $name = trim(stripslashes(htmlspecialchars($_POST['name'])));
     $email = trim(stripslashes(htmlspecialchars($_POST['email'])));
     $message = nl2br(trim(stripslashes(htmlspecialchars($_POST['message']))));
-    $subject = "Message from alexu.dev";
+    $subject = "Message from _______";
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $error['email']  = "Invalid email format";
+    // validate the form fields
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $error['email']  = "Invalid email address";
     if (empty($message)) $error['message'] = "Message is required";
 
+    // if there are errors, save the error messages in the session
+    if (isset($error)) {
+        $_SESSION['error'] = $error;
+        header('Location: /#contact');
+        exit();
+    }
+
+    
     if (!isset($error)) {
     
+        // load the config file
         $config = json_decode(file_get_contents('config.json'), true);
         if (!isset($config['SENDGRID_API_KEY'])) {
             echo 'Error';
@@ -28,8 +47,8 @@ if (!empty($_POST)) {
         $body = "Name: $name <br> Email: $email <br> Message: $message";
 
 
+        // send the email using SendGrid
         require("./lib/sendgrid/sendgrid-php.php");
-
         $email = new \SendGrid\Mail\Mail(); 
         $email->setFrom("info@pontique.com", "alexu.dev");
         $email->setSubject($subject);
@@ -40,7 +59,10 @@ if (!empty($_POST)) {
         $sendgrid = new \SendGrid($config['SENDGRID_API_KEY']);
         $sendgrid->send($email);
 
-        header('Location: index.php');
+        // save success message in the session
+        $_SESSION['flash'] = [ 'type' => 'success', 'message' => 'Your message sent successfully!' ];
+
+        header('Location: /');
         exit();        
 
         // try {
