@@ -30,6 +30,7 @@ if (!empty($_POST)) {
     // if there are errors, save the error messages in the session
     if (isset($error)) {
         $_SESSION['error'] = $error;
+        $_SESSION['form'] = [ 'name'=> $name, 'email'=> $email, 'message'=> $message ];
         header('Location: /#contact');
         exit();
     }

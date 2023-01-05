@@ -10,7 +10,8 @@
     <meta name="googlebot" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@400;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
@@ -81,7 +82,10 @@
                 
                 <section>
                     <h2>About Me</h2>
-                    <p>I am a full stack web developer with more than fifteen years of hands-on experience. Focused and efficient learner with practical expertise. </p>
+                    <p>I am a full stack web developer with more than fifteen years of hands-on experience.
+                        I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
+                    <p>I am a self-motivated, hard-working, and goal-oriented person. I am able to work independently and as part of a team.</p>
+
                 </section>
 
                 <section>
@@ -101,8 +105,10 @@
                         <div class="my-1 fw-bold">2003 &ndash; 2022 &middot; Freelance</div>
                         <div class="mb-3">Full Stack Web Developer</div>
                         <div>
-                            Backend (PHP, MySQL) and frontend (HTML, CSS, Javascript, jQuery, Bootstrap) development, website deployment, search engine optimization, and running advertising campaigns. Monthly technical maintenance. <br>
-                            I have worked with numerous companies over the years. <br>
+                            Worked with clients to understand their business needs and developed custom web solutions to meet those needs.<br>
+                            Implemented user feedback to improve the usability of the web products.<br>
+                            Maintained and updated existing websites.<br>
+                            I have worked with numerous companies over the years.<br>
                         </div>
                     </div>
 
@@ -110,9 +116,9 @@
                         <div class="my-1 fw-bold">2007 &ndash; 2016 &middot; Online Plumbing Store Mirsanteh</div>
                         <div class="mb-3">Full Stack Web Developer &middot; Part-Time</div>
                         <div>
-                            I joined a small brick and mortar plumbing store with only three employees.<br>
-                            Within about five years, we became one of the top-3 Russian online plumbing stores.<br>
-                            I built the online store from scratch, without using any frameworks.
+                            In 2007, I joined a small brick and mortar plumbing store that had only three employees. <br>
+                            We were able to grow the business and become one of the top three Russian online plumbing stores within four years. <br>
+                            I played a crucial role in this growth by building the online store from scratch, without relying on any frameworks.
                         </div>
                     </div>
 
@@ -120,8 +126,7 @@
                         <div class="my-1 fw-bold">2003 &ndash; 2006 &middot; Online Toy Store Neopod</div>
                         <div class="mb-3">Full Stack Web Developer</div>
                         <div>
-                            I was a part of a small family business and was responsible for our website.<br>
-                            The business grew and was successfully sold in 2006.
+                            I have worked as a web developer in a small family business. I was responsible for our company website and played a significant role in its growth. As a result of my efforts, the business was successfully sold in 2006.
                         </div>
                     </div>
 
@@ -216,7 +221,7 @@
                 </section>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <section> 
                             <h2>Languages</h2>
                             <ul class="list-group list-group-horizontal my-3">
@@ -237,13 +242,13 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <section>
                             <h2>Interests</h2>
                             <div class="w-75">
-                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Playing soccer</div>
-                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Woodworking</div>
-                                <div class="py-2"><i class="me-2 fa-solid fa-check"></i>Chess</div>
+                                <div class="py-2"><i class="me-2 fa-solid fa-futbol"></i>Playing soccer</div>
+                                <div class="py-2"><i class="me-2 fa-sharp fa-solid fa-hammer"></i>Woodworking</div>
+                                <div class="py-2"><i class="me-2 fa-solid fa-chess"></i>Chess</div>
                             </div>
                         </section>
                     </div>
@@ -259,14 +264,14 @@
 
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="flName" name="name" placeholder="" value="">
+                                    <input type="text" class="form-control" id="flName" name="name" placeholder="" value="<?= $_SESSION['form']['name'] ?? "" ?>">
                                     <label for="flName">Your Name</label>
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="flEmail" name="email" placeholder="" value="">
+                                    <input type="text" class="form-control" id="flEmail" name="email" placeholder="" value="<?= $_SESSION['form']['email'] ?? "" ?>">
                                     <label for="flEmail">Your Email</label>
                                     <div class="text-danger"><?= $error['email'] ?? "" ?></div>
                                 </div>
@@ -274,7 +279,7 @@
                 
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" name="message" id="flMessage" rows="5" style="height: 180px;"></textarea>
+                                    <textarea class="form-control" name="message" id="flMessage" rows="5" style="height: 180px;"><?= $_SESSION['form']['message'] ?? "" ?></textarea>
                                     <label for="flMessage">Message</label>
                                     <div class="text-danger"><?= $error['message'] ?? "" ?></div>
                                 </div>
