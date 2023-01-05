@@ -90,11 +90,23 @@
 
                 <section>
                     <h2>Skills</h2>
-                    <div class="w-75">
-                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Main stack:</span> PHP, MySQL, HTML, CSS, Javascript, jQuery, Bootstrap</span></div>
-                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Frameworks:</span> Laravel (PHP), Flask (Python)</span></div>
-                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Other:</span> SEO, MVC, JSON, Rest API, Git</span></div>
-                        <div class="border-bottom py-2"><i class="me-2 fa-regular fa-square-check"></i> <span class="k5_skills"><span class="text-black-50">Deploy:</span> Digital Ocean, Linode, Ubuntu, Nginx, Apache</span></div>
+                    <div class="k5_skills">
+                        <div class="border-bottom py-2">
+                            <i class="fa-regular fa-square-check"></i>
+                            <span class="text-black-50">Main stack:</span> PHP, MySQL, HTML, CSS, Javascript
+                        </div>
+                        <div class="border-bottom py-2">
+                            <i class="fa-regular fa-square-check"></i>
+                            <span class="text-black-50">Frameworks:</span> Laravel (PHP), Flask (Python), jQuery, Bootstrap
+                        </div>
+                        <div class="border-bottom py-2">
+                            <i class="fa-regular fa-square-check"></i>
+                            <span class="text-black-50">Other:</span> SEO, MVC, JSON, Rest API, Git
+                        </div>
+                        <div class="border-bottom py-2">
+                            <i class="fa-regular fa-square-check"></i>
+                            <span class="text-black-50">Deploy:</span> Digital Ocean, Linode, Ubuntu, Nginx, Apache
+                        </div>
                     </div>
                 </section>
 
@@ -169,8 +181,8 @@
                             <!-- </a> -->
                         </div>
 
-                        <!-- <div class="col">
-                            <a href="/portfolio/irimex.html" class="text-decoration-none text-dark">
+                        <div class="col">
+                            <!-- <a href="/portfolio/mirsanteh.html" class="text-decoration-none text-dark"> -->
                                 <div class="card">
                                     <img src="/resources/images/portfolio/thumb_mirsanteh.png" alt="Online Plumbing Store" class="card-img-top">
                                     <div class="card-body">
@@ -183,8 +195,8 @@
                                     </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div> -->
+                            <!-- </a> -->
+                        </div>
 
                         <div class="col">
                             <!-- <a href="/portfolio/bitfifo.html" class="text-decoration-none text-dark"> -->
@@ -201,6 +213,22 @@
                                 </div>
                             <!-- </a> -->
                         </div>
+
+                        <div class="col">
+                            <!-- <a href="/portfolio/k5calc.html" class="text-decoration-none text-dark"> -->
+                                <div class="card">
+                                    <img src="/resources/images/portfolio/thumb_k5calc.png" alt="k5calc - Simple Windows Keyboard Calculator" class="card-img-top">
+                                    <div class="card-body">
+                                    <p class="card-text">k5calc - Simple Windows Keyboard Calculator</p>
+                                    <div class="my2">
+                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Python</span>
+                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Tkinter</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            <!-- </a> -->
+                        </div>
+
 
                     </div>
                 </section>
