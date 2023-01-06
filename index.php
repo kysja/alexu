@@ -1,11 +1,13 @@
 <?php
     include 'sendform.php';
-    
     include './inc/header.php';
-?>
 
-        
-        
+    $skills     = json_decode(file_get_contents('./data/skills.json'));
+    $experience = json_decode(file_get_contents('./data/experience.json'));
+    $portfolio  = json_decode(file_get_contents('./data/portfolio.json'));
+
+    
+?>
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
@@ -25,67 +27,40 @@
                 <section>
                     <h2>Skills</h2>
                     <div class="k5_skills">
-                        <div class="border-bottom py-2">
-                            <i class="fa-regular fa-square-check"></i>
-                            <span class="text-black-50">Main stack:</span> PHP, MySQL, HTML, CSS, Javascript
-                        </div>
-                        <div class="border-bottom py-2">
-                            <i class="fa-regular fa-square-check"></i>
-                            <span class="text-black-50">Frameworks:</span> Laravel (PHP), Flask (Python), jQuery, Bootstrap
-                        </div>
-                        <div class="border-bottom py-2">
-                            <i class="fa-regular fa-square-check"></i>
-                            <span class="text-black-50">Other:</span> SEO, MVC, JSON, Rest API, Git
-                        </div>
-                        <div class="border-bottom py-2">
-                            <i class="fa-regular fa-square-check"></i>
-                            <span class="text-black-50">Deploy:</span> Digital Ocean, Linode, Ubuntu, Nginx, Apache
-                        </div>
+                        <?php foreach ($skills as $skill) : ?>
+                            <div class="border-bottom py-2">
+                                <i class="fa-regular fa-square-check"></i>
+                                <span class="text-black-50"><?= $skill->title ?></span> <?= implode(", ", $skill->list); ?>
+                            </div>
+                        <?php endforeach ?>
                     </div>
                 </section>
 
                 <section>
-                    <h2>Experience</h2>
-                    
-                    <div class="mt-4">
-                        <div class="my-1 fw-bold">2003 &ndash; 2022 &middot; Freelance</div>
-                        <div class="mb-3">Full Stack Web Developer</div>
-                        <div>
-                            Worked with clients to understand their business needs and developed custom web solutions to meet those needs.<br>
-                            Implemented user feedback to improve the usability of the web products.<br>
-                            Maintained and updated existing websites.<br>
-                            I have worked with numerous companies over the years.<br>
-                        </div>
+                    <h2>Experience</h2>                    
+                    <?php foreach ($experience as $exper) : ?>
+                        <div class="mt-4">
+                        <div class="my-1"><b><?= $exper->start ?> &ndash; <?= $exper->end ?></b> &middot; <?= $exper->company ?></div>
+                        <div class="mb-2"><?= $exper->title ?></div>
+                        <div><?= nl2br($exper->description) ?></div>
                     </div>
-
-                    <div class="mt-5">
-                        <div class="my-1 fw-bold">2007 &ndash; 2016 &middot; Online Plumbing Store Mirsanteh</div>
-                        <div class="mb-3">Full Stack Web Developer &middot; Part-Time</div>
-                        <div>
-                            In 2007, I joined a small brick and mortar plumbing store that had only three employees. <br>
-                            We were able to grow the business and become one of the top three Russian online plumbing stores within four years. <br>
-                            I played a crucial role in this growth by building the online store from scratch, without relying on any frameworks.
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <div class="my-1 fw-bold">2003 &ndash; 2006 &middot; Online Toy Store Neopod</div>
-                        <div class="mb-3">Full Stack Web Developer</div>
-                        <div>
-                            I have worked as a web developer in a small family business. I was responsible for our company website and played a significant role in its growth. As a result of my efforts, the business was successfully sold in 2006.
-                        </div>
-                    </div>
-
+                    <?php endforeach ?>
                 </section>
 
                 <section>
                     <h2>Portfolio</h2>
                     <ul class="mt-4">
-                        <li class="my-3"><a href="portfolio_palliq.php">Website for pallet liquidation company in Florida</a> &middot; Python, Flask, MySQL, Bootstrap</li>
-                        <li class="my-3"><a href="#" data-bs-toggle="modal" data-bs-target="#bitfifoModal">Tool for the accountant department of a crypto company</a> &middot; Python, Flask, SQLite</li>
-                        <li class="my-3"><a href="https://github.com/kysja/k5calc#k5calc---simple-windows-keyboard-calculator" target="_blank">K5Calc - Simple Windows Keyboard Calculator. Github</a> &middot; Python, Tkinter</li>
-                        <li class="my-3"><a href="portfolio_ru.php">Over 100 websites for Russian companies and organizations</a> &middot; PHP, MySQL</li>
-
+                        <?php foreach ($portfolio as $por) : ?>
+                            <li class="my-3">
+                                <?php if ($por->link->type == "url") : ?>
+                                    <a href="<?= $por->link->url ?>" target="<?= $por->link->target ?? '' ?>">
+                                <?php elseif ($por->link->type == "modal") : ?>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#<?= $por->link->id ?>">
+                                <?php endif ?>
+                                    <?= $por->title ?></a> &middot; <?= implode(", ", $por->stack) ?>
+                                </a>
+                            </li>
+                        <?php endforeach ?>
                     </ul>
                 </section>
 

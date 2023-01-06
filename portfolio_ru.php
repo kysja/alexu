@@ -32,18 +32,18 @@
                 <section>
                 
                 <div class="row g-4">
-                    <?php foreach ($projects as $p) : ?>
+                    <?php foreach ($projects as $project) : ?>
                         
                         <div class="col-lg-6">
                             <div class="card text-center rounded-0">
-                                <img src="/resources/images/portfolio_ru/<?= $p->img ?>" class="" alt="<?= $p->title ?>">
+                                <img src="/resources/images/portfolio_ru/<?= $project->img ?>" class="" alt="<?= $project->title ?>">
                                 <div class="card-body">
                                     <div class="bg-body-secondary fs-5 py-2 px-1">
-                                        <?= $p->title ?>
+                                        <?= $project->title ?>
                                     </div>
                                     <div class="my-2">
-                                        <a class="text-decoration-none" href="<?= $p->link ?>" target="_blank">
-                                            <?= $p->link_display ?> 
+                                        <a class="text-decoration-none" href="<?= $project->link ?>" target="_blank">
+                                            <?= $project->link_display ?> 
                                         </a>
                                     </div>
                                 </div>

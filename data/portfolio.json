@@ -1,0 +1,36 @@
+[
+    {
+        "link": { 
+            "type": "url",
+            "url": "portfolio_palliq.php"
+        },
+        "title": "Website for pallet liquidation company in Florida",
+        "stack": [ "Python", "Flask", "MySQL", "Bootstrap", "jQuery" ]
+    },
+    {
+        "link": { 
+            "type": "modal",
+            "id": "bitfifoModal"
+        },
+        "title": "Tool for the accountant department of a crypto company",
+        "stack": [ "Python", "Flask", "SQLite" ]
+    },
+    {
+        "link": { 
+            "type": "url",
+            "url": "https://github.com/kysja/k5calc#k5calc---simple-windows-keyboard-calculator",
+            "target": "_blank"
+        },
+        "title": "K5Calc - Simple Windows Keyboard Calculator",
+        "stack": [ "Python", "Tkinter" ]
+    },
+    {
+        "link": { 
+            "type": "url",
+            "url": "portfolio_ru.php"
+        },
+        "title": "Over 100 websites for Russian companies and organizations",
+        "stack": [ "PHP", "MySQL" ]
+    }
+    
+]
