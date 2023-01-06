@@ -22,7 +22,7 @@ h1, h2 {
 }
 
 .k5_portfolio .card {
-    height: 290px;    
+    min-height: 320px;    
 }
 
 .k5_portfolio .card img {

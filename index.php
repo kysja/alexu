@@ -1,81 +1,15 @@
 <?php
     include 'sendform.php';
+    
+    include './inc/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@400;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/lib/fontawesome6/css/all.min.css">
-
-    <link rel="stylesheet" href="/resources/css/main.css">
-    
-    <script src="/resources/js/bootstrap.bundle.min.js"></script>
-    
-    <title>Alex U - Full Stack Web Developer</title>
-</head>
-<body>
-    
-    <div class="container border bg-white shadow">
         
-        <!-- flash message -->
-        <?php if (isset($flash)) : ?>
-            <div class="my-3 alert alert-<?= $flash['type'] ?> alert-dismissible fade show text-center" role="alert">
-                <strong><?= $flash['message'] ?></strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <script>
-                setTimeout(() => {
-                    document.querySelector('.alert').classList.remove('show');
-                    setTimeout(() => {
-                        document.querySelector('.alert').classList.add('d-none');
-                    }, 500);
-                }, 4000);
-            </script>
-        <?php endif; ?>
-        <!-- end of flash message -->
         
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <aside>
-                    <div class="mt-5"><img class="img-fluid rounded rounded-2" src="/resources/images/me.jpg" alt="Alex"></div>
-                    <div class="mt-2 fw-normal fs-5">Hello, I'm Alex</div>
-                    <div class="k5_position mt-2 mb-4">Full Stack Web Developer</div>
-                    
-                    <div class="mt-5 text-start ps-4">
-                        <div class="my-3">
-                            <i class="me-2 fa-solid fa-location-dot"></i>
-                            <span class="k5_links">Jacksonvile, Florida, US</span>
-                        </div>
-                        <div class="my-3">
-                            <i class="me-2 fa-solid fa-globe"></i>
-                            <a class="text-decoration-none text-black k5_links" href="https://alexu.dev">alexu.dev</a>
-                        </div>
-                        <div class="my-3">
-                            <i class="me-2 fa-solid fa-envelope"></i>
-                            <a class="text-decoration-none text-black k5_links" href="mailto:alulogov@gmail.com">alulogov@gmail.com</a>
-                        </div>
-                        <div class="my-3">
-                            <i class="me-2 fa-brands fa-linkedin"></i>
-                            <a class="text-decoration-none text-black k5_links" href="https://www.linkedin.com/in/aulogov">Linkedin</a>
-                        </div>
-                        <div class="my-3">
-                            <i class="me-2 fa-brands fa-github"></i>
-                            <a class="text-decoration-none text-black k5_links" href="https://github.com/kysja">GitHub</a>
-                        </div>
-                    </div>
-
-                </aside>
+                <?php include './inc/sidebar.php'; ?>
             </div>
             
             <div class="col-md-9">
@@ -146,91 +80,13 @@
 
                 <section>
                     <h2>Portfolio</h2>
-                    <div class="k5_portfolio mt-2 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <ul class="mt-4">
+                        <li class="my-3"><a href="portfolio_palliq.php">Website for pallet liquidation company in Florida</a> &middot; Python, Flask, MySQL, Bootstrap</li>
+                        <li class="my-3"><a href="#" data-bs-toggle="modal" data-bs-target="#bitfifoModal">Tool for the accountant department of a crypto company</a> &middot; Python, Flask, SQLite</li>
+                        <li class="my-3"><a href="https://github.com/kysja/k5calc#k5calc---simple-windows-keyboard-calculator" target="_blank">K5Calc - Simple Windows Keyboard Calculator. Github</a> &middot; Python, Tkinter</li>
+                        <li class="my-3"><a href="portfolio_ru.php">Over 100 websites for Russian companies and organizations</a> &middot; PHP, MySQL</li>
 
-                        <div class="col">
-                            <!-- <a href="/portfolio/palliq.html" class="text-decoration-none text-dark"> -->
-                                <div class="card">
-                                        <img src="/resources/images/portfolio/thumb_palliq.png" alt="Pallet Liquidation" class="card-img-top">
-                                    <div class="card-body">
-                                    <p class="card-text">Website for pallet liquidation company in Florida</p>
-                                    <div class="my2">
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Python</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Flask</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">MySQL</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Bootstrap</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </div>
-
-                        <div class="col">
-                            <!-- <a href="/portfolio/irimex.html" class="text-decoration-none text-dark"> -->
-                                <div class="card">
-                                    <img src="/resources/images/portfolio/thumb_irimex.png" alt="Engineering Company" class="card-img-top">
-                                    <div class="card-body">
-                                    <p class="card-text">Website with over 5 000 pages for a Russian technical equipment supplier</p>
-                                    <div class="my2">
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">PHP</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">MySQL</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">jQuery</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </div>
-
-                        <div class="col">
-                            <!-- <a href="/portfolio/mirsanteh.html" class="text-decoration-none text-dark"> -->
-                                <div class="card">
-                                    <img src="/resources/images/portfolio/thumb_mirsanteh.png" alt="Online Plumbing Store" class="card-img-top">
-                                    <div class="card-body">
-                                    <p class="card-text">One of the top-3 Russian online plumbing stores in 2010-2014</p>
-                                    <div class="my2">
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">PHP</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">MySQL</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Javascript</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">jQuery</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </div>
-
-                        <div class="col">
-                            <!-- <a href="/portfolio/bitfifo.html" class="text-decoration-none text-dark"> -->
-                                <div class="card">
-                                    <img src="/resources/images/portfolio/thumb_bitfifo.png" alt="Tool for accountant department" class="card-img-top">
-                                    <div class="card-body">
-                                    <p class="card-text">Tool for accountant department of a crypto company</p>
-                                    <div class="my2">
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Python</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Flask</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">SQLite</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </div>
-
-                        <div class="col">
-                            <!-- <a href="/portfolio/k5calc.html" class="text-decoration-none text-dark"> -->
-                                <div class="card">
-                                    <img src="/resources/images/portfolio/thumb_k5calc.png" alt="k5calc - Simple Windows Keyboard Calculator" class="card-img-top">
-                                    <div class="card-body">
-                                    <p class="card-text">k5calc - Simple Windows Keyboard Calculator</p>
-                                    <div class="my2">
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Python</span>
-                                        <span class="badge bg-secondary me-1 px-1 fw-normal">Tkinter</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            <!-- </a> -->
-                        </div>
-
-
-                    </div>
+                    </ul>
                 </section>
 
 
@@ -324,6 +180,7 @@
 
             </div>      
         </div>
-    </div>
-</body>
-</html>
+<?php
+    include_once "./inc/modal.php";
+    include_once "./inc/footer.php";
+?>

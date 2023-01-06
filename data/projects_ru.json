@@ -1,0 +1,51 @@
+[
+    {
+        "title": "IT Outsourcing Company",
+        "link": "https://www.administrator-pro.ru",
+        "link_display": "administrator-pro.ru",
+        "img": "administrator-pro.png"
+    },
+    {
+        "title": "HVAC Services",
+        "link": "https://www.energo-pilot.ru",
+        "link_display": "energo-pilot.ru",
+        "img": "energo-pilot.png"
+    },
+    {
+        "title": "POS Materials Manufacturer",
+        "link": "http://www.plastinika.ru",
+        "link_display": "plastinika.ru",
+        "img": "plastinika.png"
+    },
+    {
+        "title": "Technical Equipment Supplier",
+        "link": "https://www.irimex.ru",
+        "link_display": "irimex.ru",
+        "img": "irimex.png"
+    },
+    {
+        "title": "Plumbing Online-Store",
+        "link": "https://web.archive.org/web/20170603220446/https://www.mirsanteh.ru/",
+        "link_display": "mirsanteh.ru",
+        "img": "mirsanteh.png"
+    },
+    {
+        "title": "Roofing Company",
+        "link": "https://www.aek-stroy.ru",
+        "link_display": "aek-stroy.ru",
+        "img": "aek-stroy.png"
+    },
+    {
+        "title": "Pipeline Manufacturer",
+        "link": "http://www.stroipolymer.ru",
+        "link_display": "stroipolymer.ru",
+        "img": "stroipolymer.png"
+    },
+    {
+        "title": "Shower Cabins Store",
+        "link": "http://www.sanvam.ru",
+        "link_display": "sanvam.ru",
+        "img": "sanvam.png"
+    }
+    
+]
