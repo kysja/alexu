@@ -2,6 +2,15 @@
     {
         "link": { 
             "type": "url",
+            "url": "https://github.com/kysja/alexu",
+            "target": "_blank"
+        },
+        "title": "alexu.dev - Personal Resume Website (this one)",
+        "stack": [ "PHP", "Bootstrap", "JSON" ]
+    },
+    {
+        "link": { 
+            "type": "url",
             "url": "/pages/portfolio_palliq.php"
         },
         "title": "Website for pallet liquidation company in Florida",
