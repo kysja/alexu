@@ -19,6 +19,19 @@
     <script src="/resources/js/bootstrap.bundle.min.js"></script>
     
     <title>Alex Ulogov - Full Stack Web Developer</title>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N165LBJ1YZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-N165LBJ1YZ');
+    </script>
+
+
 </head>
 <body>
     
