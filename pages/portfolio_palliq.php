@@ -1,17 +1,12 @@
 <?php
-    include 'sendform.php';
-    include './inc/header.php';
+    include '../inc/header.php';
 
-    $projects = json_decode(file_get_contents('./data/projects_ru.json'));
-
+    $projects = json_decode(file_get_contents('../data/projects_ru.json'));
 ?>
-
-        
-        
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <?php include './inc/sidebar.php'; ?>
+                <?php include '../inc/sidebar.php'; ?>
             </div>
             
             <div class="col-md-9">
@@ -52,12 +47,8 @@
 
                 </section>
 
-                
-
-
-
             </div>      
         </div>
 <?php
-    include_once "./inc/footer.php";
+    include_once "../inc/footer.php";
 ?>

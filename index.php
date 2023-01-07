@@ -1,11 +1,10 @@
 <?php
-    include 'sendform.php';
+    include './inc/sendform.php';
     include './inc/header.php';
 
     $skills     = json_decode(file_get_contents('./data/skills.json'));
     $experience = json_decode(file_get_contents('./data/experience.json'));
     $portfolio  = json_decode(file_get_contents('./data/portfolio.json'));
-
     
 ?>
 
