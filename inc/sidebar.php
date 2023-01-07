@@ -24,5 +24,15 @@
             <i class="me-2 fa-brands fa-github"></i>
             <a class="text-decoration-none text-black k5_links" href="https://github.com/kysja">GitHub</a>
         </div> -->
+
+        
+        <div class="mt-5 text-center">
+            <a class="fw-bold text-decoration-none btn btn-outline-primary px-4" href="/resources/Resume.docx">
+                <i class="fa-regular fa-file-word pe-2"></i> 
+                Resume
+            </a>
+        </div>
+
+
     </div>
 </aside>

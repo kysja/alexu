@@ -18,8 +18,7 @@
                 
                 <section>
                     <h2>About Me</h2>
-                    <p>I am a full stack web developer with more than fifteen years of hands-on experience.
-                        I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
+                    <p>I am a full stack web developer with more than fifteen years of hands-on experience. I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
                     <p>I am a self-motivated, hard-working, and goal-oriented person. I am able to work independently and as part of a team.</p>
 
                 </section>
@@ -41,8 +40,15 @@
                     <?php foreach ($experience as $exper) : ?>
                         <div class="mt-4">
                         <div class="my-1"><b><?= $exper->start ?> &ndash; <?= $exper->end ?></b> &middot; <?= $exper->company ?></div>
-                        <div class="mb-2"><?= $exper->title ?></div>
-                        <div><?= nl2br($exper->description) ?></div>
+                        <div class="mb-2 fst-italic"><?= $exper->title ?></div>
+                        <div>
+                            <ul>
+                                <?php foreach ($exper->list as $item) : ?>
+                                    <li><?= $item ?></li>
+                                <?php endforeach ?>
+
+                            </ul>
+                        </div>
                     </div>
                     <?php endforeach ?>
                 </section>

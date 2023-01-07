@@ -2,23 +2,42 @@
     {
         "start": "2003",
         "end": "2022",
-        "company": "Freelance",
+        "company": "Freelance, Numerous Clients",
         "title": "Full Stack Web Developer",
-        "description": "I have worked with clients to understand their business needs and developed custom web solutions to meet those needs.\nI worked on a full range of web development tasks, including frontend, backend, deployment, support, and search engine optimization.\nI have worked with numerous companies over the years."
+        "list" : [
+            "Discuss clients’ business needs and develop custom web solutions",
+            "Develop and use my own framework",
+            "Work with web designers",
+            "Maintain and update websites",
+            "Generate dynamic business and accounting reports",
+            "Search engine optimization"
+        ]
     },
     {
         "start": "2007",
         "end": "2017",
         "company": "Online Plumbing Store Mirsanteh",
         "title": "Full Stack Web Developer",
-        "description": "In 2007, I joined a small brick-and-mortar plumbing store that had only three employees.\nWe were able to grow the business and become one of the top three Russian online plumbing stores within four years.\nI played a crucial role in this growth by building the online store from scratch, without relying on any frameworks."
+        "list" : [
+            "Help to grow business from small brick-and-mortar plumbing store to one of the top three Russian online plumbing stores",
+            "Build very complex online store from the ground up",
+            "Build a module to exchange data with accounting software",
+            "Create dynamically generated business reports",
+            "Troubleshoot and resolve technical issues",
+            "Work with SEO and advertising agencies"
+        ]
     },
     {
         "start": "2003",
         "end": "2006",
         "company": "Online Toy Store Neopod",
         "title": "Full Stack Web Developer",
-        "description": "II have worked as a web developer in a small family business. I was responsible for our company website and played a significant role in its growth. As a result of my efforts, the business was successfully sold in 2006."
+        "list" : [
+            "Develop a website for a small family toy store",
+            "Develop an accounting tool",
+            "Toy market research",
+            "Help to grow and sell the business"
+        ]
     }
     
 ]

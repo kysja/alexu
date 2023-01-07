@@ -18,7 +18,7 @@
     
     <script src="/resources/js/bootstrap.bundle.min.js"></script>
     
-    <title>Alex U - Full Stack Web Developer</title>
+    <title>Alex Ulogov - Full Stack Web Developer</title>
 </head>
 <body>
     
