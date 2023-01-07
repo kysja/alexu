@@ -1,6 +1,6 @@
 # Personal Resume Website
 
-See: [alexu.dev](https://www.alexu.dev).
+See: [alexu.dev](https://www.alexu.dev)
 
 This website serves as an online version of my resume.
 
@@ -16,9 +16,9 @@ To view my resume, simply visit the [website](https://www.alexu.dev) and browse 
 - Bootstrap
 - PHP
 - JSON
-- Sendmail
+- Sendgrid
 - Font Awesome
 
 ## License
 
-My site is released under the MIT License.
+My site is released under the [MIT License](https://github.com/kysja/alexu/blob/master/LICENSE).
