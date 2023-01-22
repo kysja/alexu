@@ -26,11 +26,18 @@
         </div> -->
 
         
-        <div class="mt-5 text-center">
-            <a class="fw-bold text-decoration-none btn btn-outline-primary px-4" href="/resources/Resume.docx">
-                <i class="fa-regular fa-file-word pe-2"></i> 
-                Resume
-            </a>
+        <div class="mt-5 text-center border border-dark-subtle rounded-3 bg-body-tertiary p-3">
+            <h6 class="fw-bold">Download My Resume</h6>
+            <div class="mt-3">
+                <a class="fw-bold text-decoration-none btn btn-outline-dark px-3 mx-2 my-2" href="/resources/Resume_AlexUlogov.docx">
+                    <i class="fa-regular fa-file-word pe-2"></i> 
+                    docx
+                </a>
+                <a class="fw-bold text-decoration-none btn btn-outline-dark px-4 mx-2 my-2" href="/resources/Resume_AlexUlogov.pdf">
+                    <i class="fa-regular fa-file-pdf pe-2"></i> 
+                    pdf
+                </a>
+            </div>
         </div>
 
 

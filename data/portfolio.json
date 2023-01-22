@@ -11,6 +11,15 @@
     {
         "link": { 
             "type": "url",
+            "url": "https://github.com/kysja/101ru",
+            "target": "_blank"
+        },
+        "title": "Website 101ru.com",
+        "stack": [ "Laravel", "PHP", "MySQL"]
+    },
+    {
+        "link": { 
+            "type": "url",
             "url": "/pages/portfolio_palliq.php"
         },
         "title": "Website for pallet liquidation company in Florida",
