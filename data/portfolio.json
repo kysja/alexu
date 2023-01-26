@@ -20,7 +20,7 @@
     {
         "link": { 
             "type": "url",
-            "url": "/pages/portfolio_palliq.php"
+            "url": "/portfolio_palliq.php"
         },
         "title": "Website for pallet liquidation company in Florida",
         "stack": [ "Python", "Flask", "MySQL", "Bootstrap", "jQuery" ]
@@ -45,7 +45,7 @@
     {
         "link": { 
             "type": "url",
-            "url": "/pages/portfolio_ru.php"
+            "url": "/portfolio_ru.php"
         },
         "title": "Over 100 websites for Russian companies and organizations",
         "stack": [ "PHP", "MySQL" ]

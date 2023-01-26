@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@400;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/lib/fontawesome6/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome6.all.min.css">
 
-    <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     
-    <script src="/resources/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
     
     <title>Alex Ulogov - Full Stack Web Developer</title>
 

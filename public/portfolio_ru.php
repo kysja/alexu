@@ -1,13 +1,13 @@
 <?php
-    include '../inc/header.php';
+    include_once __DIR__ . '/../inc/header.php';
 
-    $projects = json_decode(file_get_contents('../data/projects_ru.json'));
+    $projects = json_decode(file_get_contents(__DIR__ . '/../data/projects_ru.json'));
 ?>
 
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <?php include '../inc/sidebar.php'; ?>
+                <?php include_once __DIR__ . '/../inc/sidebar.php'; ?>
             </div>
             
             <div class="col-md-9">
@@ -32,7 +32,7 @@
                         
                         <div class="col-lg-6">
                             <div class="card text-center rounded-0">
-                                <img src="/resources/images/portfolio_ru/<?= $project->img ?>" class="" alt="<?= $project->title ?>">
+                                <img src="/images/portfolio_ru/<?= $project->img ?>" class="" alt="<?= $project->title ?>">
                                 <div class="card-body">
                                     <div class="bg-body-secondary fs-5 py-2 px-1">
                                         <?= $project->title ?>
@@ -55,5 +55,5 @@
             </div>      
         </div>
 <?php
-    include_once "../inc/footer.php";
+    include_once __DIR__ . '/../inc/footer.php';
 ?>

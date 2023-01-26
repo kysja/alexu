@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         
-        <img src="/resources/images/portfolio/bitfifo.png" class="img-fluid">
+        <img src="/images/portfolio/bitfifo.png" class="img-fluid">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

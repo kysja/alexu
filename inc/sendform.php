@@ -39,7 +39,7 @@ if (!empty($_POST)) {
     if (!isset($error)) {
     
         // load the config file
-        $config = json_decode(file_get_contents('config.json'), true);
+        $config = json_decode(file_get_contents(__DIR__ . '/../config.json'), true);
         if (!isset($config['SENDGRID_API_KEY'])) {
             echo 'Error';
             exit();
@@ -49,7 +49,7 @@ if (!empty($_POST)) {
 
 
         // send the email using SendGrid
-        require("./lib/sendgrid/sendgrid-php.php");
+        require (__DIR__ . '/../lib/sendgrid/sendgrid-php.php');
         $email = new \SendGrid\Mail\Mail(); 
         $email->setFrom("info@pontique.com", "alexu.dev");
         $email->setSubject($subject);

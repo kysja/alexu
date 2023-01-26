@@ -1,16 +1,16 @@
 <?php
-    include './inc/sendform.php';
-    include './inc/header.php';
+    include_once __DIR__ . '/../inc/sendform.php';
+    include_once __DIR__ . '/../inc/header.php';
 
-    $skills     = json_decode(file_get_contents('./data/skills.json'));
-    $experience = json_decode(file_get_contents('./data/experience.json'));
-    $portfolio  = json_decode(file_get_contents('./data/portfolio.json'));
+    $skills     = json_decode(file_get_contents(__DIR__ . '/../data/skills.json'));
+    $experience = json_decode(file_get_contents(__DIR__ . '/../data/experience.json'));
+    $portfolio  = json_decode(file_get_contents(__DIR__ . '/../data/portfolio.json'));
     
 ?>
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <?php include './inc/sidebar.php'; ?>
+                <?php include_once __DIR__ . '/../inc/sidebar.php'; ?>
             </div>
             
             <div class="col-md-9">
@@ -161,6 +161,6 @@
             </div>      
         </div>
 <?php
-    include_once "./inc/modal.php";
-    include_once "./inc/footer.php";
+    include_once __DIR__ . '/../inc/modal.php';
+    include_once __DIR__ . '/../inc/footer.php';
 ?>
