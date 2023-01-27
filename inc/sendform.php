@@ -16,7 +16,9 @@ if (isset($_SESSION['flash'])) {
 
 // check if the form has been submitted
 if (!empty($_POST)) {
-    
+
+    if (!isset($_POST['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) exit;
+        
     // get the form fields
     $name = trim(stripslashes(htmlspecialchars($_POST['name'])));
     $email = trim(stripslashes(htmlspecialchars($_POST['email'])));
