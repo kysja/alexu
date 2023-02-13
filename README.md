@@ -17,7 +17,9 @@ To view my resume, simply visit the [website](https://www.alexu.dev) and browse 
 - PHP
 - JSON
 - Sendgrid
+- CSRF Token
 - Font Awesome
+
 
 ## License
 
