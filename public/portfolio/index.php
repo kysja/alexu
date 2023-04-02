@@ -1,13 +1,13 @@
 <?php
-require __DIR__ . '/../../models/Portfolio.php';
+require_once __DIR__ . '/../../models/helpers.php';
+require base_path('models/Portfolio.php');
 $portfolio = new Portfolio();
-
-include_once __DIR__ . '/../../inc/header.php';   
+include_once base_path('inc/header.php'); 
 ?>
 
 <div class="row mb-5">
     <div class="col-md-3 text-center">
-        <?php include_once __DIR__ . '/../../inc/sidebar.php'; ?>
+        <?php include_once base_path('inc/sidebar.php'); ?>
     </div>
     
     <div class="col-md-9">
@@ -33,7 +33,6 @@ include_once __DIR__ . '/../../inc/header.php';
                         <?php if ($project->stack ?? false) : ?>
                             <div class="my-3 k5_font_inconsolata">
                                 <?php foreach ($project->stack as $tech) : ?>
-                                    <!-- <span class="badge bg-info me-2 mb-2 text-black"><?= $tech ?></span> -->
                                     <div class="d-inline-block bg-light rounded-2 border fw-bold px-2 py-1 me-1 mb-1"><?= $tech ?></div>
                                 <?php endforeach ?>
                             </div>
@@ -45,8 +44,6 @@ include_once __DIR__ . '/../../inc/header.php';
                     </div>
                 </div>
                 <div class="border-bottom my-5"></div>
-
-
             <?php endforeach ?>
         
         </section>
@@ -54,4 +51,4 @@ include_once __DIR__ . '/../../inc/header.php';
     </div>
 </div>
 
-<?php include_once __DIR__ . '/../../inc/footer.php'; ?>
+<?php include_once base_path('inc/footer.php'); ?>

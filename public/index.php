@@ -1,16 +1,18 @@
 <?php
-require __DIR__ . '/../models/Data.php';
-require __DIR__ . '/../models/Csrf.php';
+require_once __DIR__ . '/../models/helpers.php';
+
+require_once base_path('models/Data.php');
+require_once base_path('models/Csrf.php');
 $data = new Data();
 $csrf = new Csrf();
 
-include_once __DIR__ . '/../inc/sendform.php';
-include_once __DIR__ . '/../inc/header.php';   
+include_once base_path('inc/sendform.php');
+include_once base_path('inc/header.php');
 ?>
 
 <div class="row mb-5">
     <div class="col-md-3 text-center">
-        <?php include_once __DIR__ . '/../inc/sidebar.php'; ?>
+        <?php include_once base_path('inc/sidebar.php'); ?>
     </div>
     
     <div class="col-md-9">
@@ -150,8 +152,8 @@ include_once __DIR__ . '/../inc/header.php';
 
     </div>      
 </div>
-<?php
 
-    include_once __DIR__ . '/../inc/modal.php';
-    include_once __DIR__ . '/../inc/footer.php';
+<?php
+include_once base_path('inc/modal.php');
+include_once base_path('inc/footer.php');
 ?>
