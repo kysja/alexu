@@ -1,19 +1,19 @@
 <?php
-    include_once __DIR__ . '/../inc/header.php';
+    include_once __DIR__ . '/../../inc/header.php';
 
-    $projects = json_decode(file_get_contents(__DIR__ . '/../data/projects_ru.json'));
+    $ru_projects = json_decode(file_get_contents(__DIR__ . '/../../data/projects_ru.json'));
 ?>
 
 
         <div class="row mb-5">
             <div class="col-md-3 text-center">
-                <?php include_once __DIR__ . '/../inc/sidebar.php'; ?>
+                <?php include_once __DIR__ . '/../../inc/sidebar.php'; ?>
             </div>
             
             <div class="col-md-9">
 
                 <div class="mt-5 mb-2">
-                    <a href="/">Main Page</a> &rarr; Websites for Russian Companies
+                    <a href="/">Main Page</a> &rarr; <a href="/portfolio/">Portfolio</a> &rarr; Websites for Russian Companies
                 </div>
                 
                 <section>
@@ -28,11 +28,11 @@
                 <section>
                 
                 <div class="row g-4">
-                    <?php foreach ($projects as $project) : ?>
+                    <?php foreach ($ru_projects as $project) : ?>
                         
                         <div class="col-lg-6">
                             <div class="card text-center rounded-0">
-                                <img src="/images/portfolio_ru/<?= $project->img ?>" class="" alt="<?= $project->title ?>">
+                                <img src="./images/ru/<?= $project->img ?>" class="" alt="<?= $project->title ?>">
                                 <div class="card-body">
                                     <div class="bg-body-secondary fs-5 py-2 px-1">
                                         <?= $project->title ?>
@@ -55,5 +55,5 @@
             </div>      
         </div>
 <?php
-    include_once __DIR__ . '/../inc/footer.php';
+    include_once __DIR__ . '/../../inc/footer.php';
 ?>

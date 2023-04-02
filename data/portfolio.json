@@ -1,54 +1,63 @@
 [
     {
-        "link": { 
-            "type": "url",
-            "url": "https://github.com/kysja/alexu",
-            "target": "_blank"
-        },
-        "title": "alexu.dev - Personal Resume Website (this one)",
-        "stack": [ "PHP", "Bootstrap", "JSON" ]
+        "title" : "Shore Steps Calculator",
+        "link" : "https://stepcalc.alexu.dev",
+        "image" : "stepcalc.png",
+        "github" : "stepcalc",
+        "stack" : [ "PHP", "HTML", "CSS", "Bootstrap", "JavaScript", "SVG" ],
+        "description" : "This project is designed to assist individuals in calculating the appropriate dimensions and quantity of shore steps needed based on the size of a hill. Moreover, in addition to providing essential calculations, this program generates a visual representation of the calculated shore steps in the form of an SVG image."
     },
+
     {
-        "link": { 
-            "type": "url",
-            "url": "https://github.com/kysja/101ru",
-            "target": "_blank"
-        },
-        "title": "Website 101ru.com",
-        "stack": [ "Laravel", "PHP", "MySQL"]
+        "title" : "Website for Pallet Liquidation Company",
+        "link" : "https://palliq.alexu.dev",
+        "image" : "palliq.png",
+        "stack" : [ "Python", "Flask", "MySQL", "JavaScript", "HTML", "CSS", "Websockets" ],
+        "page" : "palliq",
+        "description" : "The website provides three different options for customers to purchase pallets: Buy Now, Auction, and Offline sales at the warehouse. The project was built using the Flask framework (Python). The real-time bidding achieved through the use of WebSockets."
     },
+
     {
-        "link": { 
-            "type": "url",
-            "url": "/portfolio_palliq.php"
-        },
-        "title": "Website for pallet liquidation company in Florida",
-        "stack": [ "Python", "Flask", "MySQL", "Bootstrap", "jQuery" ]
+        "title" : "Over 100 websites for Russian Companies",
+        "image" : "ru.png",
+        "stack" : [ "PHP", "MySQL", "JavaScript", "HTML", "CSS", "jQuery" ],
+        "page" : "ru",
+        "description" : "I have developed over a hundred websites for Russian companies, including small and medium-sized businesses. The backend of these websites is written in PHP and MySQL, and I developed my own framework to use. Each site has its own admin page, allowing clients to easily update their websites on their own. The HTML code is optimized for search engines, ensuring that the websites are easily discoverable through search."
+    }, 
+
+    {
+        "title" : "Website 101ru.com",
+        "link" : "https://www.101ru.com",
+        "image" : "101ru.png",
+        "github" : "101ru",
+        "stack" : [ "Laravel 9", "PHP", "MySQL", "JavaScript", "HTML", "CSS", "jQuery" ],
+        "description" : "Website Russia in Pictures provides users with a unique perspective on Russia. The site was built using the Laravel 9 framework, PHP, and MySQL database."
     },
+
     {
-        "link": { 
-            "type": "modal",
-            "id": "bitfifoModal"
-        },
-        "title": "Tool for the accountant department of a crypto company",
-        "stack": [ "Python", "Flask", "SQLite" ]
+        "title" : "Demo Project",
+        "link" : "https://demo.alexu.dev",
+        "image" : "demo.png",
+        "github" : "demo",
+        "stack" : [ "PHP", "MySQL", "JavaScript", "HTML", "CSS", "XML", "Bootstrap" ],
+        "description" : "The project involves importing an XML file from a remote source, parsing the data contained in the file, and adding the parsed data to a database. The data can then be displayed to the user with options to sort and filter the data based on various criteria. <a href=\"https://demo.alexu.dev/about\">Read more</a>"
     },
+
     {
-        "link": { 
-            "type": "url",
-            "url": "https://github.com/kysja/k5calc#k5calc---simple-windows-keyboard-calculator",
-            "target": "_blank"
-        },
-        "title": "K5Calc - Simple Windows Keyboard Calculator",
-        "stack": [ "Python", "Tkinter" ]
+        "title" : "K5Calc - Simple Windows Keyboard Calculator",
+        "image" : "k5calc.png",
+        "github" : "k5calc",
+        "stack" : [ "Python", "Tkinter", "SLY" ],
+        "description" : "K5Calc is a simple Windows keyboard calculator built with Python and the Tkinter framework. It allows you to perform basic arithmetic calculations using only your keyboard. For lexing and parsing, the SLY library was used"
     },
+
     {
-        "link": { 
-            "type": "url",
-            "url": "/portfolio_ru.php"
-        },
-        "title": "Over 100 websites for Russian companies and organizations",
-        "stack": [ "PHP", "MySQL" ]
+        "title" : "Personal Resume Website",
+        "link" : "https://www.alexu.dev",
+        "image" : "alexu.png",
+        "github" : "alexu",
+        "stack" : [ "PHP", "JavaScript", "HTML", "CSS", "Bootstrap" ],
+        "description" : "The website functions as an online representation of my resume, providing information regarding my experience, skills, education, interests, and other details about myself."
     }
-    
+
 ]

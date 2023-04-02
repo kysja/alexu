@@ -24,7 +24,7 @@ include_once __DIR__ . '/../inc/header.php';
 
         <section>
             <h2>Skills</h2>
-            <div class="k5_skills">
+            <div class="k5_font_inconsolata">
                 <?php foreach ($data->get('skills') as $skill) : ?>
                     <div class="border-bottom py-2">
                         <i class="fa-regular fa-square-check"></i>
@@ -54,19 +54,7 @@ include_once __DIR__ . '/../inc/header.php';
 
         <section>
             <h2>Portfolio</h2>
-            <ul class="mt-4">
-                <?php foreach ($data->get('portfolio') as $por) : ?>
-                    <li class="my-3">
-                        <?php if ($por->link->type == "url") : ?>
-                            <a href="<?= $por->link->url ?>" target="<?= $por->link->target ?? '' ?>">
-                        <?php elseif ($por->link->type == "modal") : ?>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#<?= $por->link->id ?>">
-                        <?php endif ?>
-                            <?= $por->title ?></a> &middot; <?= implode(", ", $por->stack) ?>
-                        </a>
-                    </li>
-                <?php endforeach ?>
-            </ul>
+            <div class="my-4">Throughout my career, I have developed corporate websites, landing pages, online stores, web applications, online tools, and multi-functional portals. Please visit my <a href="/portfolio/" class="fw-bold text-decoration-none">Portfolio Page</a> to see some of my work.</div>
         </section>
 
 
