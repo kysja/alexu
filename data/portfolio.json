@@ -1,5 +1,13 @@
 [
     {
+        "title" : "Data Management System",
+        "image" : "dbac.png",
+        "stack" : [ "PHP", "HTML", "CSS", "Bootstrap", "JavaScript" ],
+        "page" : "dbac",
+        "description" : "Web-based Data Management System for a Company in the Construction Sector. The system has the ability to bring in data from numerous CSV files, clean the data, and eliminate any duplicates. It can also gather extra data by utilizing third-party API services."
+    },
+
+    {
         "title" : "Shore Steps Calculator",
         "link" : "https://stepcalc.alexu.dev",
         "image" : "stepcalc.png",
