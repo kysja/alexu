@@ -4,7 +4,8 @@
     <div class="k5_position mt-2 mb-2">PHP Developer</div>
     <div class="k5_position mt-2 mb-4">Full Stack Web Developer</div>
     
-    <div class="mt-5 text-start ps-4">
+    
+    <div class="mt-4 text-start ps-4">
         <div class="my-3">
             <i class="me-2 fa-solid fa-location-dot"></i>
             <span class="k5_links">Jacksonvile, Florida, US</span>
@@ -25,10 +26,11 @@
             <i class="me-2 fa-brands fa-github"></i>
             <a class="text-decoration-none text-black k5_links" href="https://github.com/kysja">GitHub</a>
         </div>
-
     </div>
+
+    <div class="mt-4 mb-3"><a href="/portfolio/" class="btn btn-primary fw-bold">My Portfolio</a></div>
         
-    <div class="mt-5 mx-auto d-inline-block text-center border border-dark-subtle rounded-3 bg-body-tertiary py-3 px-3">
+    <div class="mt-3 mx-auto d-inline-block text-center border border-dark-subtle rounded-3 bg-body-tertiary py-3 px-3">
         <h6 class="fw-bold">Download My Resume</h6>
         <div class="mt-3">
             <a class="fw-bold text-decoration-none btn btn-outline-dark px-3 mx-2 my-2" href="/resume/Resume_AlexUlogov.docx">

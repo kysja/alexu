@@ -1,19 +1,20 @@
 [
+
     {
-        "title": "Main stack",
-        "list": [ "PHP", "MySQL", "JavaScript", "HTML", "CSS" ]
+        "title": "Back-End",
+        "list": [ "PHP", "MySQL", "Python", "Laravel", "Flask" ]
     },
     {
-        "title": "Frameworks",
-        "list": [ "Laravel (PHP)", "Flask (Python)", "Bootstrap", "jQuery" ]
+        "title": "Front-End",
+        "list": [ "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Vue" ]
     },
     {
-        "title": "Other",
-        "list": [ "SEO", "MVC", "JSON", "Rest API", "Git" ]
+        "title": "Additional",
+        "list": [ "SEO", "MVC", "JSON", "Rest API", "Git", "LAMP" ]
     },
     {
         "title": "Deployment",
-        "list": [ "Digital Ocean", "Linode", "Ubuntu", "Nginx", "Apache" ]
+        "list": [ "Digital Ocean", "Linode", "Ubuntu", "Apache", "Nginx" ]
     }
     
 ]

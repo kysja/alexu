@@ -1,9 +1,9 @@
 [
     {
-        "title": "IT Outsourcing Company",
-        "link": "https://www.administrator-pro.ru",
-        "link_display": "administrator-pro.ru",
-        "img": "administrator-pro.png"
+        "title": "Technical Equipment Supplier",
+        "link": "https://www.irimex.ru",
+        "link_display": "irimex.ru",
+        "img": "irimex.png"
     },
     {
         "title": "HVAC Services",
@@ -16,12 +16,6 @@
         "link": "http://www.plastinika.ru",
         "link_display": "plastinika.ru",
         "img": "plastinika.png"
-    },
-    {
-        "title": "Technical Equipment Supplier",
-        "link": "https://www.irimex.ru",
-        "link_display": "irimex.ru",
-        "img": "irimex.png"
     },
     {
         "title": "Plumbing Online-Store",
@@ -40,6 +34,12 @@
         "link": "http://www.stroipolymer.ru",
         "link_display": "stroipolymer.ru",
         "img": "stroipolymer.png"
+    },
+    {
+        "title": "IT Outsourcing Company",
+        "link": "https://www.administrator-pro.ru",
+        "link_display": "administrator-pro.ru",
+        "img": "administrator-pro.png"
     },
     {
         "title": "Shower Cabins Store",

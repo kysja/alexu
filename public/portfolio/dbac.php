@@ -17,9 +17,9 @@ include_once base_path('inc/header.php');
         <section>
             <h2>Web-based Data Management System for a Company in the Construction Sector</h2>
             
-            <p>The system has the ability to bring in data from numerous CSV files, clean the data, and eliminate any duplicates. It can also gather extra data by utilizing third-party API services.</p>
+            <p>The system can bring in data from multiple CSV files, clean the data, and eliminate duplicates. It can also gather extra data by utilizing third-party API services.</p>
 
-            <h3>Features</h3>
+            <p>Here are some features:</p>
             <ul>
                 <li>Import data from CSV and ZIP files. You can upload thousands of files simultaneously. The system will parse the data and save it to different tables in the database. It will also check for any duplicate entries.</li>
                 <li>Once the data is imported, you can view it in the system and take advantage of the various sorting and filtering options available.</li>
@@ -29,6 +29,7 @@ include_once base_path('inc/header.php');
 
             <div class="my-3 border"><img src="./images/dbac/01.png" class="img-fluid"></div>
             <div class="my-3 border"><img src="./images/dbac/02.png" class="img-fluid"></div>
+            <div class="my-3 border"><img src="./images/dbac/03.png" class="img-fluid"></div>
         
         </section>
 

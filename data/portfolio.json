@@ -1,5 +1,14 @@
 [
     {
+        "title" : "Income Statement Generator",
+        "image" : "bunnybooks.png",
+        "stack" : [ "Vue 3", "PHP", "MySQL", "Bootstrap", "JavaScript" ],
+        "page" : "bunnybooks",
+        "github" : "bunnybooks",
+        "description" : "A single-page application (SPA) that allows you to generate an income statement for your business. The application is built using Vue3 (Composition API, Pinia), PHP, MySQL, and Bootstrap."
+    },
+
+    {
         "title" : "Data Management System",
         "image" : "dbac.png",
         "stack" : [ "PHP", "HTML", "CSS", "Bootstrap", "JavaScript" ],
