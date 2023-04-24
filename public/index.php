@@ -19,9 +19,8 @@ include_once base_path('inc/header.php');
         
         <section>
             <h2>About Me</h2>
-            <p>I am a full stack web developer with more than fifteen years of hands-on experience. I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
-            <p>I am a self-motivated, hard-working, and goal-oriented person. I am able to work independently and as part of a team.</p>
-
+            <p>I am a Full Stack PHP Developer with more than fifteen years of hands-on experience. I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
+            <p>I am a self-motivated, hard-working, and goal-oriented person. I can work independently and as part of a team.</p>
         </section>
 
         <section>
@@ -30,7 +29,7 @@ include_once base_path('inc/header.php');
                 <?php foreach ($data->get('skills') as $skill) : ?>
                     <div class="border-bottom py-2">
                         <i class="fa-regular fa-square-check"></i>
-                        <span class="text-black-50"><?= $skill->title ?></span> <?= implode(", ", $skill->list); ?>
+                        <span class="text-black-50"><?= $skill->title ?>:</span> <?= implode(", ", $skill->list); ?>
                     </div>
                 <?php endforeach ?>
             </div>
