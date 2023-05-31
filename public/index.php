@@ -2,11 +2,10 @@
 require_once __DIR__ . '/../models/helpers.php';
 
 require_once base_path('models/Data.php');
-require_once base_path('models/Csrf.php');
+// require_once base_path('models/Csrf.php');
 $data = new Data();
-$csrf = new Csrf();
+// $csrf = new Csrf();
 
-include_once base_path('inc/sendform.php');
 include_once base_path('inc/header.php');
 ?>
 
@@ -106,47 +105,6 @@ include_once base_path('inc/header.php');
                 </section>
             </div>
         </div>
-
-
-
-        <section>
-            <a name="contact"></a>
-            <h2>Contact Me</h2>
-            <form method="post" action="/">
-                <?= $csrf->csrfField(); ?>
-                
-                <div class="row g-3">
-
-                    <div class="col-sm-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="flName" name="name" placeholder="" value="<?= $_SESSION['form']['name'] ?? "" ?>">
-                            <label for="flName">Your Name</label>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="flEmail" name="email" placeholder="" value="<?= $_SESSION['form']['email'] ?? "" ?>">
-                            <label for="flEmail">Your Email</label>
-                            <div class="text-danger"><?= $error['email'] ?? "" ?></div>
-                        </div>
-                    </div>
-        
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" name="message" id="flMessage" rows="5" style="height: 180px;"><?= $_SESSION['form']['message'] ?? "" ?></textarea>
-                            <label for="flMessage">Message</label>
-                            <div class="text-danger"><?= $error['message'] ?? "" ?></div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </div>
-
-                </div>
-            </form>
-        </section>
 
 
     </div>      

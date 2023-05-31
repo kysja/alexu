@@ -1,6 +1,7 @@
 [
     {
         "title" : "Income Statement Generator",
+        "link" : "https://bunnybooks.alexu.dev",
         "image" : "bunnybooks.png",
         "stack" : [ "Vue 3", "PHP", "MySQL", "Bootstrap", "JavaScript" ],
         "page" : "bunnybooks",
