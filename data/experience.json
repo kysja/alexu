@@ -1,6 +1,19 @@
 [
     {
         "start": "2003",
+        "end": "Present",
+        "company": "Magicore Academy",
+        "title": "Full Stack PHP Developer, Laravel Developer",
+        "list" : [
+            "Discuss employer’s business needs and develop custom web solutions",
+            "Code refactoring to comply with Laravel best practices",
+            "Develop and maintain the site's admin, teacher, and student sections",
+            "API Integration with Stripe (subscription model), and integration with Articulate - Storyline 360",
+            "Tech stack. Front-End: JavaScript, jQuery, Bootstrap 5, Laravel Blade; Back-End: PHP 8, Laravel 8, MySQL, LAMP"
+        ]
+    },
+    {
+        "start": "2003",
         "end": "2023",
         "company": "Self-Employed",
         "title": "Full Stack PHP Developer",
