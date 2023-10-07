@@ -1,6 +1,18 @@
 [
     {
-        "start": "2003",
+        "start": "August, 2023",
+        "end": "Present",
+        "company": "Leonard’s Photography",
+        "title": "Full Stack PHP Developer, Laravel Developer",
+        "list" : [
+            "Maintain multiple company's sites, develop new features",
+            "Code refactoring, migration from MySQL stored procedures to Laravel Models",
+            "Work with large MySQL databases, optimize queries",
+            "Tech stack. Front-End: Vue 2, JavaScript, jQuery, Bootstrap 4, Tailwind; Back-End: PHP 7, Laravel 8, MySQL, C#"
+        ]
+    },
+    {
+        "start": "May, 2023",
         "end": "Present",
         "company": "Magicore Academy",
         "title": "Full Stack PHP Developer, Laravel Developer",
