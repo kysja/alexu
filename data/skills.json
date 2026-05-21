@@ -2,19 +2,23 @@
 
     {
         "title": "Back-End",
-        "list": [ "PHP", "MySQL", "Python", "Laravel", "Flask" ]
+        "list": [ "PHP 7,8", "Laravel 7-13", "MySQL" ]
     },
     {
         "title": "Front-End",
-        "list": [ "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Vue" ]
+        "list": [ "HTML", "CSS", "JavaScript", "Bootstrap 4,5", "jQuery", "Vue 2,3" ]
+    },
+    {
+        "title": "AI & Automation",
+        "list": [ "OpenAI", "Anthropic", "Claude Code", "Codex", "AI chatbots", "vector search", "embeddings" ]
     },
     {
         "title": "Additional",
-        "list": [ "SEO", "MVC", "JSON", "Rest API", "Git", "LAMP" ]
+        "list": [ "SEO", "MVC", "JSON", "XML", "API", "Git", "GitLab", "Jira", "Slack", "LAMP" ]
     },
     {
         "title": "Deployment",
-        "list": [ "Digital Ocean", "Linode", "Ubuntu", "Apache", "Nginx" ]
+        "list": [ "Digital Ocean", "Linode", "Ubuntu", "Debian", "Apache", "Nginx" ]
     }
-    
+
 ]

@@ -2,7 +2,8 @@
     <div class="mt-5"><img class="img-fluid rounded rounded-2" src="/assets/images/me.jpg" alt="Alex"></div>
     <div class="mt-2 fw-normal fs-5">Hello, I'm Alex</div>
     <div class="k5_position mt-2 mb-2">Full Stack PHP Developer</div>
-    <div class="k5_position mt-2 mb-4">Laravel Developer</div>
+    <div class="k5_position mt-2 mb-2">Laravel Developer</div>
+    <div class="k5_position mt-2 mb-4">AI & Automation</div>
     
     
     <div class="mt-4 text-start ps-4">

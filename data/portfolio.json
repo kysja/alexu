@@ -1,5 +1,13 @@
 [
     {
+        "title" : "School Years - Memory Book - School Keepsake",
+        "link" : "https://schoolkeepsake.com/",
+        "image" : "schoolkeepsake.png",
+        "stack" : [ "Laravel", "PHP", "MySQL", "Vue 3", "JavaScript", "Bootstrap" ],
+        "description" : "School Keepsake is a web-based platform that helps parents preserve and organize their child's K–12 school memories in one beautifully structured digital keepsake book. The platform allows users to collect photos, milestones, activities, teachers, friends, and yearly memories, then automatically generates professionally designed memory book pages for sharing, printing, or exporting."
+    },
+
+    {
         "title" : "Income Statement Generator",
         "link" : "https://bunnybooks.alexu.dev",
         "image" : "bunnybooks.png",

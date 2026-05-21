@@ -18,8 +18,8 @@ include_once base_path('inc/header.php');
         
         <section>
             <h2>About Me</h2>
-            <p>I am a Full Stack PHP Developer with more than fifteen years of hands-on experience. I have a strong background in web development and have worked on a wide range of projects from simple websites to complex web applications.</p>
-            <p>I am a self-motivated, hard-working, and goal-oriented person. I can work independently and as part of a team.</p>
+            <p>I am an experienced Laravel and Full Stack PHP Developer with 15+ years of hands-on experience building web applications, business systems, and custom software solutions. I have a strong background in Laravel, PHP, MySQL, Vue.js, and modern web development practices.</p>
+            <p>Recently focused on AI integrations, automation, AI-assisted workflows, and intelligent business tools using LLM APIs and modern AI technologies. I can work independently or as part of a team to deliver scalable and maintainable solutions.</p>
         </section>
 
         <section>

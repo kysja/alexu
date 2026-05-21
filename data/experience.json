@@ -1,27 +1,35 @@
 [
     {
-        "start": "August, 2023",
+        "start": "2023",
         "end": "Present",
-        "company": "Leonard’s Photography",
+        "company": "Leonard's Photography",
         "title": "Full Stack PHP Developer, Laravel Developer",
         "list" : [
-            "Maintain multiple company's sites, develop new features",
-            "Code refactoring, migration from MySQL stored procedures to Laravel Models",
-            "Work with large MySQL databases, optimize queries",
-            "Tech stack. Front-End: Vue 2,3, JavaScript, jQuery, Bootstrap 4,5, Tailwind; Back-End: PHP 7,8, Laravel 7-11, MySQL, C#"
+            "Maintained and developed company websites and Laravel-based web applications",
+            "Refactored and migrated legacy systems from MySQL stored procedures, C#, and VB to modern Laravel architecture",
+            "Worked with large MySQL databases and optimized complex queries and application performance",
+            "Built AI-assisted workflows using LLM APIs, prompt engineering, vector search, embeddings, and retrieval-based systems",
+            "Researched and implemented AI features to improve automation, search experience, and business workflows",
+            "Integrated third-party APIs including Google, Twilio, Mailchimp, OpenAI, and others",
+            "Performed code reviews and provided technical guidance for junior developers",
+            "Front-End: Vue 2/3, JavaScript, jQuery, Bootstrap 4/5, Tailwind CSS",
+            "Back-End: PHP 7/8, Laravel 7/8/11/12/13, MySQL, C#",
+            "Other: Git, GitLab, Jira, Slack, LAMP, Debian, Node.js"
         ]
     },
     {
-        "start": "May, 2023",
+        "start": "2023",
         "end": "Present",
         "company": "Magicore Academy",
         "title": "Full Stack PHP Developer, Laravel Developer",
         "list" : [
-            "Discuss employer’s business needs and develop custom web solutions",
-            "Code refactoring to comply with Laravel best practices",
-            "Develop and maintain the site's admin, teacher, and student sections",
-            "API Integration with Stripe (subscription model), and integration with Articulate - Storyline 360",
-            "Tech stack. Front-End: JavaScript, jQuery, Bootstrap 5, Laravel Blade; Back-End: PHP 8, Laravel 8, MySQL, LAMP"
+            "Collaborated with the business owners to understand business needs and develop custom web solutions",
+            "Refactored code to comply with Laravel best practices and migrated to the latest Laravel version",
+            "Developed and maintained the site's admin, teacher, and student sections",
+            "Integrated APIs with Stripe (subscription model), Clever, Articulate Storyline 360 and others",
+            "Set up and maintained a Digital Ocean Ubuntu server with a LAMP stack",
+            "Front-End: JavaScript, jQuery, Bootstrap 5, Laravel Blade -> Vue 3",
+            "Back-End: PHP 8, Laravel 8->12, MySQL, LAMP"
         ]
     },
     {
@@ -30,11 +38,11 @@
         "company": "Self-Employed",
         "title": "Full Stack PHP Developer",
         "list" : [
-            "Discuss clients’ business needs and develop custom web solutions",
-            "Develop and use my own framework",
-            "Work with web designers",
-            "Maintain and update websites",
-            "Generate dynamic business and accounting reports",
+            "Discussed clients' business needs and developed custom web solutions",
+            "Developed and used my own framework",
+            "Worked with web designers",
+            "Maintained and updated websites",
+            "Generated dynamic business and accounting reports",
             "Search engine optimization"
         ]
     },
@@ -44,12 +52,10 @@
         "company": "Online Plumbing Store Mirsanteh",
         "title": "Full Stack PHP Developer",
         "list" : [
-            "Help to grow business from small brick-and-mortar plumbing store to one of the top three Russian online plumbing stores",
-            "Build very complex online store from the ground up",
-            "Build a module to exchange data with accounting software",
-            "Create dynamically generated business reports",
-            "Troubleshoot and resolve technical issues",
-            "Work with SEO and advertising agencies"
+            "Helped to grow the business from a small brick-and-mortar plumbing store to one of the top three Russian online plumbing stores",
+            "Built a very complex online store from the ground up",
+            "Built a module to exchange data with accounting and other software, generate business reports",
+            "Worked with SEO and advertising agencies"
         ]
     },
     {
@@ -64,5 +70,5 @@
             "Help to grow and sell the business"
         ]
     }
-    
+
 ]
