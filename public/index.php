@@ -1,116 +1,20 @@
 <?php
-require_once __DIR__ . '/../models/helpers.php';
 
-require_once base_path('models/Data.php');
-// require_once base_path('models/Csrf.php');
-$data = new Data();
-// $csrf = new Csrf();
+use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
 
-include_once base_path('inc/header.php');
-?>
+define('LARAVEL_START', microtime(true));
 
-<div class="row mb-5">
-    <div class="col-md-3 text-center">
-        <?php include_once base_path('inc/sidebar.php'); ?>
-    </div>
-    
-    <div class="col-md-9">
-        
-        <section>
-            <h2>About Me</h2>
-            <p>I am an experienced Laravel and Full Stack PHP Developer with 15+ years of hands-on experience building web applications, business systems, and custom software solutions. I have a strong background in Laravel, PHP, MySQL, Vue.js, and modern web development practices.</p>
-            <p>Recently focused on AI integrations, automation, AI-assisted workflows, and intelligent business tools using LLM APIs and modern AI technologies. I can work independently or as part of a team to deliver scalable and maintainable solutions.</p>
-        </section>
+// Determine if the application is in maintenance mode...
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
 
-        <section>
-            <h2>Skills</h2>
-            <div class="k5_font_inconsolata">
-                <?php foreach ($data->get('skills') as $skill) : ?>
-                    <div class="border-bottom py-2">
-                        <i class="fa-regular fa-square-check"></i>
-                        <span class="text-black-50"><?= $skill->title ?>:</span> <?= implode(", ", $skill->list); ?>
-                    </div>
-                <?php endforeach ?>
-            </div>
-        </section>
+// Register the Composer autoloader...
+require __DIR__.'/../vendor/autoload.php';
 
-        <section>
-            <h2>Experience</h2>                    
-            <?php foreach ($data->get('experience') as $exper) : ?>
-                <div class="mt-4">
-                <div class="my-1"><b><?= $exper->start ?> &ndash; <?= $exper->end ?></b> &middot; <?= $exper->company ?></div>
-                <div class="mb-2 fst-italic"><?= $exper->title ?></div>
-                <div>
-                    <ul>
-                        <?php foreach ($exper->list as $item) : ?>
-                            <li><?= $item ?></li>
-                        <?php endforeach ?>
+// Bootstrap Laravel and handle the request...
+/** @var Application $app */
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-                    </ul>
-                </div>
-            </div>
-            <?php endforeach ?>
-        </section>
-
-        <section>
-            <h2>Portfolio</h2>
-            <div class="my-4">Throughout my career, I have developed corporate websites, landing pages, online stores, web applications, online tools, and multi-functional portals. Please visit my <a href="/portfolio/" class="fw-bold text-decoration-none">Portfolio Page</a> to see some of my work.</div>
-        </section>
-
-
-        <section>
-            <h2>Education</h2>
-            <div class="row">
-                <div class="col-3">
-                    <div class="fw-bold">1996 &ndash; 2001</div>
-                    <div>Moscow, Russia</div>
-                </div>
-                <div class="col-9">
-                    <div>State University of Management</div>
-                    <div>Bachelor's degree, Financial Management</div>
-                </div>
-            </div>
-        </section>
-
-        <div class="row">
-            <div class="col-md-7">
-                <section> 
-                    <h2>Languages</h2>
-                    <ul class="list-group list-group-horizontal my-3">
-                        <li class="list-group-item">English</li>
-                        <li class="list-group-item w-75">
-                            <div class="progress">
-                                <div class="progress-bar w-75" role="progressbar" aria-label="English" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal my-3">
-                        <li class="list-group-item">Russian</li>
-                        <li class="list-group-item w-75">
-                            <div class="progress">
-                                <div class="progress-bar w-100" role="progressbar" aria-label="English" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="col-md-5">
-                <section>
-                    <h2>Interests</h2>
-                    <div class="w-75">
-                        <div class="py-2"><i class="me-2 fa-solid fa-futbol"></i>Playing soccer</div>
-                        <div class="py-2"><i class="me-2 fa-sharp fa-solid fa-hammer"></i>Woodworking</div>
-                        <div class="py-2"><i class="me-2 fa-solid fa-chess"></i>Chess</div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-
-    </div>      
-</div>
-
-<?php
-include_once base_path('inc/modal.php');
-include_once base_path('inc/footer.php');
-?>
+$app->handleRequest(Request::capture());

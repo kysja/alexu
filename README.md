@@ -1,26 +1,20 @@
-# Personal Resume Website
+# alexu.dev
 
-See: [alexu.dev](https://www.alexu.dev)
+Personal site: [alexu.dev](https://www.alexu.dev)
 
-This website serves as an online version of my resume.
-
-## Getting Started
-
-To view my resume, simply visit the [website](https://www.alexu.dev) and browse through the various sections. You can find information about my education, work experience, and technical skills, as well as a few examples of my past projects.
+Sections: Home, Work, Notes, Lab, Resume, Contact.
 
 ## Technologies
 
-- HTML
-- CSS
-- Javascript
+- Laravel
+- Inertia
+- Vue
 - Bootstrap
-- PHP
-- JSON
-- Sendgrid
-- CSRF Token
 - Font Awesome
+- SQLite
 
+The previous plain-PHP version of the site is kept under the `v1-legacy` tag.
 
 ## License
 
-My site is released under the [MIT License](https://github.com/kysja/alexu/blob/master/LICENSE).
+Released under the [MIT License](LICENSE).
