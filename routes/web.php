@@ -17,3 +17,4 @@ Route::inertia('/notes', 'Notes')->name('notes');
 Route::inertia('/lab', 'Lab')->name('lab');
 Route::get('/resume', ResumeController::class)->name('resume');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/small-business', [PageController::class, 'smallBusiness'])->name('small-business');

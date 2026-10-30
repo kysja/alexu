@@ -1414,6 +1414,102 @@ a.contact-card:hover .contact-card__arrow {
     color: var(--brand);
 }
 
+/* ---------- Small business ---------- */
+
+.sb-title {
+    font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.25rem);
+}
+
+.sb-title span {
+    display: block;
+}
+
+.sb-pains {
+    padding: 1.5rem 1.6rem;
+}
+
+.sb-pains ul {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sb-pains li {
+    display: flex;
+    gap: 0.75rem;
+    color: var(--ink);
+}
+
+.sb-pains li i {
+    flex: none;
+    margin-top: 0.3rem;
+    color: var(--accent);
+}
+
+.sb-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.sb-card h3 {
+    margin: 0.5rem 0 0;
+    font-size: 1.15rem;
+}
+
+.sb-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.sb-card__for {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--brand);
+}
+
+.sb-step {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.sb-about {
+    max-width: 40rem;
+}
+
+.sb-about:first-of-type {
+    font-size: 1.1rem;
+    color: var(--ink);
+}
+
+.sb-prices {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 575.98px) {
+    .sb-prices {
+        grid-template-columns: 1fr;
+    }
+
+    .sb-prices .stat + .stat {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+    }
+}
+
 /* ---------- Empty state ---------- */
 
 .empty {

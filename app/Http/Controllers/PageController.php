@@ -24,4 +24,12 @@ class PageController extends Controller
             'profile' => SiteData::get('profile'),
         ]);
     }
+
+    public function smallBusiness(): Response
+    {
+        return Inertia::render('SmallBusiness', [
+            'profile' => SiteData::get('profile'),
+            'content' => SiteData::get('small_business'),
+        ]);
+    }
 }

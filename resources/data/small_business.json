@@ -1,0 +1,95 @@
+{
+    "hero": {
+        "eyebrow": "For small businesses in Jacksonville",
+        "title": "Custom tools for small businesses.",
+        "accent": "Stop running yours on spreadsheets and sticky notes.",
+        "lead": "I build simple software for teams of 1–50, made around how you already work. No big agency, no account managers. You talk to me."
+    },
+    "booking": null,
+    "phone": null,
+    "pains": [
+        "You're the owner, the scheduler, and the bookkeeper.",
+        "Your Excel file works, but only one person understands it.",
+        "Customer info is scattered across texts, emails, and notebooks.",
+        "Invoices go out by hand every week.",
+        "You copy the same data into three different places.",
+        "Jobs fall through the cracks when someone is out sick."
+    ],
+    "builds": [
+        {
+            "icon": "fa-solid fa-clipboard-list",
+            "title": "Job & order tracker",
+            "text": "Every job, its status, and who's on it in one place.",
+            "for": "Contractors, cleaners, repair shops"
+        },
+        {
+            "icon": "fa-solid fa-address-book",
+            "title": "Simple CRM",
+            "text": "Customers, notes, and history, instead of a phone full of texts.",
+            "for": "Salons, agencies, consultants"
+        },
+        {
+            "icon": "fa-regular fa-calendar-check",
+            "title": "Scheduling & reminders",
+            "text": "Bookings and automatic reminders, so fewer no-shows.",
+            "for": "Studios, clinics, tutors"
+        },
+        {
+            "icon": "fa-solid fa-file-invoice-dollar",
+            "title": "Invoicing & reports",
+            "text": "Invoices from finished jobs and a weekly report you don't have to build.",
+            "for": "Any service business"
+        }
+    ],
+    "steps": [
+        {
+            "title": "Free 30-minute call",
+            "text": "You show me how things work today. I tell you what I'd build and what it costs."
+        },
+        {
+            "title": "Build in 2–4 weeks",
+            "text": "Fixed scope and price. You try it along the way, so there are no surprises at the end."
+        },
+        {
+            "title": "Support after launch",
+            "text": "Hosting, backups, fixes, and small changes, with a real person who answers."
+        }
+    ],
+    "about": [
+        "I'm Alex, a software developer in Jacksonville with 15+ years of building web applications and business systems.",
+        "I work with small businesses directly and I'm happy to meet in person. You get one person who knows your business and your software."
+    ],
+    "pricing": {
+        "lead": "Built for small business budgets.",
+        "items": [
+            {
+                "label": "Custom tool",
+                "value": "$2,000–$5,000",
+                "note": "One-time project price, agreed before work starts."
+            },
+            {
+                "label": "Support",
+                "value": "from $200/mo",
+                "note": "Hosting, backups, fixes, and small changes."
+            }
+        ]
+    },
+    "faq": [
+        {
+            "q": "Is this only for bigger companies?",
+            "a": "No. It's built for teams of 1–50. Most of my clients are owners who do half the admin themselves."
+        },
+        {
+            "q": "Can I change it later?",
+            "a": "Yes. Small changes are included in support. Bigger features are quoted separately, at a fixed price."
+        },
+        {
+            "q": "Do I own it?",
+            "a": "Yes. Your data and your tool belong to you."
+        },
+        {
+            "q": "What if you disappear?",
+            "a": "The code is built on standard, widely used tools that other developers know. You get the code and your data, so anyone can take it over."
+        }
+    ]
+}

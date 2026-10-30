@@ -141,6 +141,18 @@ class WorkTest extends TestCase
                 ->has('profile.contacts.0.href'));
     }
 
+    public function test_small_business_page_has_its_content(): void
+    {
+        $this->get('/small-business')
+            ->assertStatus(200)
+            ->assertInertia(fn (Assert $page) => $page
+                ->component('SmallBusiness')
+                ->has('profile.photo')
+                ->has('content.hero.title')
+                ->has('content.builds', 4)
+                ->has('content.faq'));
+    }
+
     public function test_resume_page_has_its_data(): void
     {
         $this->get('/resume')
