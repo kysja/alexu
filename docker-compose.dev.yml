@@ -1,0 +1,46 @@
+# Local development: docker compose -f docker-compose.dev.yml up -d
+# Served by the shared Traefik proxy (~/traefik):
+# https://alexu.test -> app, https://vite.alexu.test -> node
+
+name: alexu-dev
+
+services:
+  app:
+    image: alexu-app:dev
+    build:
+      context: .
+      target: dev
+    volumes:
+      - .:/var/www/html
+    networks:
+      - default
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.alexu.rule=Host(`alexu.test`)
+      - traefik.http.routers.alexu.entrypoints=websecure
+      - traefik.http.services.alexu.loadbalancer.server.port=80
+
+  node:
+    image: node:24-alpine
+    working_dir: /var/www/html
+    user: node
+    # npm ci (never rewrites the lockfile) only on first run or when the lockfile changed
+    command: ["sh", "-c", "if [ ! -f node_modules/.package-lock.json ] || [ package-lock.json -nt node_modules/.package-lock.json ]; then npm ci; fi; npm run dev"]
+    environment:
+      VITE_DEV_HOST: vite.alexu.test
+    volumes:
+      - .:/var/www/html
+    networks:
+      - default
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.alexu-vite.rule=Host(`vite.alexu.test`)
+      - traefik.http.routers.alexu-vite.entrypoints=websecure
+      - traefik.http.services.alexu-vite.loadbalancer.server.port=5180
+
+# Created by the Traefik stack, which must be running first
+networks:
+  traefik:
+    external: true
