@@ -1,0 +1,93 @@
+{
+    "greeting": "Hello, I'm Alex",
+    "photo": "/images/me.jpg",
+    "roles": [
+        "Full Stack Software Engineer",
+        "AI & Automation"
+    ],
+    "location": "Jacksonville, Florida, US",
+    "highlights": [
+        {
+            "value": "15+",
+            "label": "Years building web applications"
+        },
+        {
+            "value": "100+",
+            "label": "Websites delivered to clients"
+        },
+        {
+            "value": "7 → 13",
+            "label": "Laravel versions shipped in production"
+        },
+        {
+            "value": "AI",
+            "label": "LLM APIs, MCP, AI agents, and vector search"
+        }
+    ],
+    "contacts": [
+        {
+            "label": "alulogov@gmail.com",
+            "icon": "fa-solid fa-envelope",
+            "href": "mailto:alulogov@gmail.com"
+        },
+        {
+            "label": "LinkedIn",
+            "icon": "fa-brands fa-linkedin",
+            "href": "https://www.linkedin.com/in/aulogov"
+        },
+        {
+            "label": "GitHub",
+            "icon": "fa-brands fa-github",
+            "href": "https://github.com/kysja"
+        }
+    ],
+    "about": [
+        "Experienced Laravel and Full Stack PHP Developer with 15+ years of experience building web applications, business systems, and custom software solutions. Strong background in Laravel, PHP, MySQL, Vue.js, APIs, and modern web development.",
+        "Experienced in AI integrations, automation, AI-assisted workflows, LLM APIs, MCP, and intelligent business tools. Comfortable working independently or as part of a team to build scalable, reliable, and maintainable solutions."
+    ],
+    "education": [
+        {
+            "start": "1996",
+            "end": "2001",
+            "location": "Moscow, Russia",
+            "school": "State University of Management",
+            "degree": "Bachelor's degree, Management"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Fluent"
+        },
+        {
+            "name": "Russian",
+            "level": "Native"
+        }
+    ],
+    "interests": [
+        {
+            "label": "Soccer",
+            "icon": "fa-futbol"
+        },
+        {
+            "label": "Woodworking",
+            "icon": "fa-hammer"
+        },
+        {
+            "label": "Chess",
+            "icon": "fa-chess"
+        }
+    ],
+    "downloads": [
+        {
+            "label": "docx",
+            "icon": "fa-file-word",
+            "href": "/resume/Resume_AlexUlogov.docx"
+        },
+        {
+            "label": "pdf",
+            "icon": "fa-file-pdf",
+            "href": "/resume/Resume_AlexUlogov.pdf"
+        }
+    ]
+}

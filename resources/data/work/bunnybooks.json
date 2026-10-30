@@ -1,0 +1,21 @@
+{
+    "title": "Income Statement Generator",
+    "body": [
+        "A single-page application (SPA) that allows you to generate an income statement for your business.",
+        "The application is built using Vue3 (Composition API, Pinia), PHP, MySQL, and Bootstrap."
+    ],
+    "shots": [
+        {
+            "image": "bunnybooks/01.png",
+            "caption": "<b>Categories Page:</b> This page allows you to enter all the categories of Income, Expenses, and Cost of sale that you use in your business."
+        },
+        {
+            "image": "bunnybooks/02.png",
+            "caption": "<b>Transactions Page:</b> This page is where you enter your transaction details—date, description, amount, and category (matching with the categories in your \"Categories\" page)."
+        },
+        {
+            "image": "bunnybooks/03.png",
+            "caption": "<b>Income Statement Page:</b> This page is where you see your income statement. It is generated automatically based on the transactions you enter in the \"Transactions\" page."
+        }
+    ]
+}

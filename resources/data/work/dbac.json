@@ -1,0 +1,18 @@
+{
+    "title": "Web-based Data Management System for a Company in the Construction Sector",
+    "body": [
+        "The system can bring in data from multiple CSV files, clean the data, and eliminate duplicates. It can also gather extra data by utilizing third-party API services.",
+        "Here are some features:"
+    ],
+    "list": [
+        "Import data from CSV and ZIP files. You can upload thousands of files simultaneously. The system will parse the data and save it to different tables in the database. It will also check for any duplicate entries.",
+        "Once the data is imported, you can view it in the system and take advantage of the various sorting and filtering options available.",
+        "The system can also gather extra information from third-party APIs.",
+        "You can export all the data or a portion of it to a CSV file. This makes it easy to share your data with others or use it in other applications."
+    ],
+    "shots": [
+        { "image": "dbac/01.png" },
+        { "image": "dbac/02.png" },
+        { "image": "dbac/03.png" }
+    ]
+}

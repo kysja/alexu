@@ -1,24 +1,20 @@
 [
 
     {
-        "title": "Back-End",
-        "list": [ "PHP 7,8", "Laravel 7-13", "MySQL" ]
-    },
-    {
-        "title": "Front-End",
-        "list": [ "HTML", "CSS", "JavaScript", "Bootstrap 4,5", "jQuery", "Vue 2,3" ]
-    },
-    {
         "title": "AI & Automation",
-        "list": [ "OpenAI", "Anthropic", "Claude Code", "Codex", "AI chatbots", "vector search", "embeddings" ]
+        "list": [ "Generative AI", "LLM APIs", "OpenAI", "Anthropic", "MCP", "Claude Code", "Codex", "AI Agents", "Prompt Engineering", "Vector Search", "Embeddings", "Retrieval-Based Workflows", "AI Chatbots", "Workflow Automation" ]
     },
     {
-        "title": "Additional",
-        "list": [ "SEO", "MVC", "JSON", "XML", "API", "Git", "GitLab", "Jira", "Slack", "LAMP" ]
+        "title": "Software Development",
+        "list": [ "PHP 7/8", "Laravel 7-13", "Python", "JavaScript", "Vue 2/3", "MySQL", "REST APIs", "JSON", "MVC" ]
+    },
+    {
+        "title": "Integration & Infrastructure",
+        "list": [ "Third-Party API Integration", "Docker", "DigitalOcean", "Linode", "Linux", "Ubuntu", "Debian", "Apache", "Nginx", "LAMP" ]
     },
     {
         "title": "Deployment",
-        "list": [ "Digital Ocean", "Linode", "Ubuntu", "Debian", "Apache", "Nginx" ]
+        "list": [ "Git", "GitLab", "Jira", "Slack", "Node.js", "Bootstrap 4/5", "Tailwind CSS", "jQuery" ]
     }
 
 ]

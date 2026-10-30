@@ -3,18 +3,19 @@
         "start": "2023",
         "end": "Present",
         "company": "Leonard's Photography",
-        "title": "Full Stack PHP Developer, Laravel Developer",
+        "title": "Full Stack PHP / Laravel Developer",
         "list" : [
-            "Maintained and developed company websites and Laravel-based web applications",
-            "Refactored and migrated legacy systems from MySQL stored procedures, C#, and VB to modern Laravel architecture",
-            "Worked with large MySQL databases and optimized complex queries and application performance",
-            "Built AI-assisted workflows using LLM APIs, prompt engineering, vector search, embeddings, and retrieval-based systems",
-            "Researched and implemented AI features to improve automation, search experience, and business workflows",
-            "Integrated third-party APIs including Google, Twilio, Mailchimp, OpenAI, and others",
-            "Performed code reviews and provided technical guidance for junior developers",
-            "Front-End: Vue 2/3, JavaScript, jQuery, Bootstrap 4/5, Tailwind CSS",
-            "Back-End: PHP 7/8, Laravel 7/8/11/12/13, MySQL, C#",
-            "Other: Git, GitLab, Jira, Slack, LAMP, Debian, Node.js"
+            "Develop and maintain internal business applications using Laravel, PHP, MySQL, JavaScript, Vue, and Python",
+            "Build AI-powered workflows using OpenAI and Anthropic APIs, MCP, AI agents, prompt engineering, vector search, and embeddings",
+            "Work with stakeholders to turn business needs into technical solutions",
+            "Build prototypes and proof-of-concepts for AI tools, automation, and system integrations",
+            "Modernize legacy systems by migrating C#, VB, and MySQL-based applications to Laravel",
+            "Optimize large MySQL databases, complex queries, and application performance",
+            "Integrate APIs and third-party services including Google, Twilio, Mailchimp, and OpenAI",
+            "Containerize and deploy applications with Docker on Linux-based infrastructure",
+            "Troubleshoot application, integration, deployment, and infrastructure issues",
+            "Perform code reviews and provide technical guidance to junior developers",
+            "Technologies: PHP 7/8, Laravel 7/8/11/12/13, MySQL, Python, JavaScript, Vue 2/3, REST APIs, Docker, Git, GitLab, Linux, Debian, Node.js, Bootstrap, Tailwind CSS"
         ]
     },
     {
@@ -23,13 +24,13 @@
         "company": "Magicore Academy",
         "title": "Full Stack PHP Developer, Laravel Developer",
         "list" : [
-            "Collaborated with the business owners to understand business needs and develop custom web solutions",
-            "Refactored code to comply with Laravel best practices and migrated to the latest Laravel version",
-            "Developed and maintained the site's admin, teacher, and student sections",
-            "Integrated APIs with Stripe (subscription model), Clever, Articulate Storyline 360 and others",
-            "Set up and maintained a Digital Ocean Ubuntu server with a LAMP stack",
-            "Front-End: JavaScript, jQuery, Bootstrap 5, Laravel Blade -> Vue 3",
-            "Back-End: PHP 8, Laravel 8->12, MySQL, LAMP"
+            "Collaborated with business owners to understand needs and develop custom web solutions",
+            "Built AI-powered tools for search, tagging, content organization using LLM APIs",
+            "Refactored legacy code to follow Laravel best practices and upgraded the application to newer Laravel versions",
+            "Developed and maintained admin, teacher, and student sections",
+            "Integrated APIs including Stripe, Clever, Articulate Storyline 360, and other third-party services",
+            "Set up and maintained a DigitalOcean Ubuntu server with a LAMP stack",
+            "Technologies: PHP 8, Laravel 8->13, MySQL, LAMP, JS, jQuery, Bootstrap 5, Blade -> Vue 3"
         ]
     },
     {
@@ -54,20 +55,7 @@
         "list" : [
             "Helped to grow the business from a small brick-and-mortar plumbing store to one of the top three Russian online plumbing stores",
             "Built a very complex online store from the ground up",
-            "Built a module to exchange data with accounting and other software, generate business reports",
             "Worked with SEO and advertising agencies"
-        ]
-    },
-    {
-        "start": "2003",
-        "end": "2006",
-        "company": "Online Toy Store Neopod",
-        "title": "Full Stack Web Developer",
-        "list" : [
-            "Develop a website for a small family toy store",
-            "Develop an accounting tool",
-            "Toy market research",
-            "Help to grow and sell the business"
         ]
     }
 

@@ -1,0 +1,59 @@
+{
+    "title": "Websites for Russian Companies",
+    "body": [
+        "I have developed over a hundred websites for Russian companies, including small and medium-sized businesses.",
+        "The backend of these websites is written in PHP and MySQL, and I developed my own framework to use. Each site has its own admin page, allowing clients to easily update their websites on their own.",
+        "The HTML code is optimized for search engines, ensuring that the websites are easily discoverable through search.",
+        "Some examples of my work are provided below."
+    ],
+    "sites": [
+        {
+            "title": "Technical Equipment Supplier",
+            "link": "https://www.irimex.ru",
+            "linkDisplay": "irimex.ru",
+            "image": "ru/irimex.png"
+        },
+        {
+            "title": "HVAC Services",
+            "link": "https://www.energo-pilot.ru",
+            "linkDisplay": "energo-pilot.ru",
+            "image": "ru/energo-pilot.png"
+        },
+        {
+            "title": "POS Materials Manufacturer",
+            "link": "http://www.plastinika.ru",
+            "linkDisplay": "plastinika.ru",
+            "image": "ru/plastinika.png"
+        },
+        {
+            "title": "Plumbing Online-Store",
+            "link": "https://web.archive.org/web/20170603220446/https://www.mirsanteh.ru/",
+            "linkDisplay": "mirsanteh.ru",
+            "image": "ru/mirsanteh.png"
+        },
+        {
+            "title": "Roofing Company",
+            "link": "https://www.aek-stroy.ru",
+            "linkDisplay": "aek-stroy.ru",
+            "image": "ru/aek-stroy.png"
+        },
+        {
+            "title": "Pipeline Manufacturer",
+            "link": "http://www.stroipolymer.ru",
+            "linkDisplay": "stroipolymer.ru",
+            "image": "ru/stroipolymer.png"
+        },
+        {
+            "title": "IT Outsourcing Company",
+            "link": "https://www.administrator-pro.ru",
+            "linkDisplay": "administrator-pro.ru",
+            "image": "ru/administrator-pro.png"
+        },
+        {
+            "title": "Shower Cabins Store",
+            "link": "http://www.sanvam.ru",
+            "linkDisplay": "sanvam.ru",
+            "image": "ru/sanvam.png"
+        }
+    ]
+}

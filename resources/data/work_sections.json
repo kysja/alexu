@@ -1,0 +1,25 @@
+[
+    {
+        "slug" : "web-apps",
+        "title" : "Web Apps",
+        "lead" : "Software with logins, data, and workflows."
+    },
+
+    {
+        "slug" : "ai",
+        "title" : "AI & Automation",
+        "lead" : "LLM features, agents, and pipelines."
+    },
+
+    {
+        "slug" : "websites",
+        "title" : "Websites",
+        "lead" : "Company sites, stores, and content portals."
+    },
+
+    {
+        "slug" : "tools",
+        "title" : "Tools",
+        "lead" : "Small single-purpose utilities."
+    }
+]

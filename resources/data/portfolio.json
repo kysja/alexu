@@ -1,6 +1,7 @@
 [
     {
         "title" : "School Years - Memory Book - School Keepsake",
+        "type" : "web-apps",
         "link" : "https://schoolkeepsake.com/",
         "image" : "schoolkeepsake.png",
         "stack" : [ "Laravel", "PHP", "MySQL", "Vue 3", "JavaScript", "Bootstrap" ],
@@ -9,6 +10,7 @@
 
     {
         "title" : "Income Statement Generator",
+        "type" : "web-apps",
         "link" : "https://bunnybooks.alexu.dev",
         "image" : "bunnybooks.png",
         "stack" : [ "Vue 3", "PHP", "MySQL", "Bootstrap", "JavaScript" ],
@@ -19,6 +21,7 @@
 
     {
         "title" : "Data Management System",
+        "type" : "web-apps",
         "image" : "dbac.png",
         "stack" : [ "PHP", "HTML", "CSS", "Bootstrap", "JavaScript" ],
         "page" : "dbac",
@@ -27,6 +30,7 @@
 
     {
         "title" : "Shore Steps Calculator",
+        "type" : "tools",
         "link" : "https://stepcalc.alexu.dev",
         "image" : "stepcalc.png",
         "github" : "stepcalc",
@@ -36,6 +40,7 @@
 
     {
         "title" : "Website for Pallet Liquidation Company",
+        "type" : "websites",
         "link" : "https://palliq.alexu.dev",
         "image" : "palliq.png",
         "stack" : [ "Python", "Flask", "MySQL", "JavaScript", "HTML", "CSS", "Websockets" ],
@@ -45,6 +50,7 @@
 
     {
         "title" : "Over 100 websites for Russian Companies",
+        "type" : "websites",
         "image" : "ru.png",
         "stack" : [ "PHP", "MySQL", "JavaScript", "HTML", "CSS", "jQuery" ],
         "page" : "ru",
@@ -53,6 +59,7 @@
 
     {
         "title" : "Website 101ru.com",
+        "type" : "websites",
         "link" : "https://www.101ru.com",
         "image" : "101ru.png",
         "github" : "101ru",
@@ -62,6 +69,7 @@
 
     {
         "title" : "Demo Project",
+        "type" : "web-apps",
         "link" : "https://demo.alexu.dev",
         "image" : "demo.png",
         "github" : "demo",
@@ -71,6 +79,7 @@
 
     {
         "title" : "K5Calc - Simple Windows Keyboard Calculator",
+        "type" : "tools",
         "image" : "k5calc.png",
         "github" : "k5calc",
         "stack" : [ "Python", "Tkinter", "SLY" ],
@@ -79,6 +88,7 @@
 
     {
         "title" : "Personal Resume Website",
+        "type" : "websites",
         "link" : "https://www.alexu.dev",
         "image" : "alexu.png",
         "github" : "alexu",

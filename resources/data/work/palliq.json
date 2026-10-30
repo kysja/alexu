@@ -1,0 +1,32 @@
+{
+    "title": "Website for pallet liquidation company in Florida",
+    "body": [
+        "The goal of the website was to provide a platform for a pallet liquidation company to sell its merchandise to customers online. There are three types of selling options available on the website: auction, buy now, and warehouse sale. Each of these options has its own separate functionality.",
+        "The website was developed using the following technologies:"
+    ],
+    "list": [
+        "Backend: Python, Flask, MySQL, SQLAlchemy",
+        "Frontend: HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, JSON, Jinja2, WebSockets"
+    ],
+    "shotsIntro": "Below are the screenshots of the demo version of the website, which has been filled with dummy data:",
+    "shots": [
+        { "image": "palliq/01.png" },
+        { "image": "palliq/02.png" },
+        { "image": "palliq/03.png" },
+        { "image": "palliq/04.png" },
+        { "image": "palliq/05.png" },
+        { "image": "palliq/06.png" },
+        { "image": "palliq/07.png" },
+        { "image": "palliq/08.png" },
+        { "image": "palliq/09.png" },
+        { "image": "palliq/10.png" },
+        { "image": "palliq/11.png" },
+        { "image": "palliq/a_01.png" },
+        { "image": "palliq/a_02.png" },
+        { "image": "palliq/a_03.png" },
+        { "image": "palliq/a_04.png" },
+        { "image": "palliq/a_05.png" },
+        { "image": "palliq/a_06.png" },
+        { "image": "palliq/a_07.png" }
+    ]
+}

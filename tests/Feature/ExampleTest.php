@@ -23,7 +23,7 @@ class ExampleTest extends TestCase
     {
         return [
             'home' => ['/', 'Home'],
-            'work' => ['/work', 'Work'],
+            'work' => ['/work', 'Work/Index'],
             'notes' => ['/notes', 'Notes'],
             'lab' => ['/lab', 'Lab'],
             'resume' => ['/resume', 'Resume'],
