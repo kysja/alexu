@@ -11,6 +11,7 @@
         "@inertiajs/vue3": "^3.8.0",
         "@popperjs/core": "^2.11.8",
         "bootstrap": "^5.3.8",
+        "swiper": "^14.4.0",
         "vue": "^3.5.43"
     },
     "devDependencies": {

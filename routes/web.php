@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\WorkController;
@@ -18,3 +19,6 @@ Route::inertia('/lab', 'Lab')->name('lab');
 Route::get('/resume', ResumeController::class)->name('resume');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/small-business', [PageController::class, 'smallBusiness'])->name('small-business');
+Route::post('/small-business', [InquiryController::class, 'store'])
+    ->middleware('throttle:5,10')
+    ->name('small-business.inquiry');

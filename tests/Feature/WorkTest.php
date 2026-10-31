@@ -143,14 +143,21 @@ class WorkTest extends TestCase
 
     public function test_small_business_page_has_its_content(): void
     {
+        $content = SiteData::get('small_business');
+        $images = [$content['hero']['image'], ...collect($content['problems']['items'])->pluck('images')->flatten()];
+
+        foreach ($images as $image) {
+            $this->assertFileExists(public_path(ltrim($image, '/')));
+        }
+
         $this->get('/small-business')
             ->assertStatus(200)
             ->assertInertia(fn (Assert $page) => $page
                 ->component('SmallBusiness')
                 ->has('profile.photo')
                 ->has('content.hero.title')
-                ->has('content.builds', 4)
-                ->has('content.faq'));
+                ->has('content.problems.items')
+                ->has('content.steps'));
     }
 
     public function test_resume_page_has_its_data(): void

@@ -1,95 +1,204 @@
 {
     "hero": {
         "eyebrow": "For small businesses in Jacksonville",
-        "title": "Custom tools for small businesses.",
-        "accent": "Stop running yours on spreadsheets and sticky notes.",
-        "lead": "I build simple software for teams of 1–50, made around how you already work. No big agency, no account managers. You talk to me."
+        "title": "Run your business on",
+        "crossed": "spreadsheets sticky notes",
+        "accent": "software built for it.",
+        "lead": "I build simple custom software for small businesses of 1–50 people, made around how you already work. No big agency, no account managers. You work with me directly.",
+        "cta": "Let's See What We Can Improve",
+        "cta_pricing": "How Much Does It Cost?",
+        "free": "The review, meeting, and quote are free. You only pay if you decide to go ahead.",
+        "image": "/images/small-business/hero.webp"
     },
-    "booking": null,
-    "phone": null,
-    "pains": [
-        "You're the owner, the scheduler, and the bookkeeper.",
-        "Your Excel file works, but only one person understands it.",
-        "Customer info is scattered across texts, emails, and notebooks.",
-        "Invoices go out by hand every week.",
-        "You copy the same data into three different places.",
-        "Jobs fall through the cracks when someone is out sick."
-    ],
-    "builds": [
-        {
-            "icon": "fa-solid fa-clipboard-list",
-            "title": "Job & order tracker",
-            "text": "Every job, its status, and who's on it in one place.",
-            "for": "Contractors, cleaners, repair shops"
-        },
-        {
-            "icon": "fa-solid fa-address-book",
-            "title": "Simple CRM",
-            "text": "Customers, notes, and history, instead of a phone full of texts.",
-            "for": "Salons, agencies, consultants"
-        },
-        {
-            "icon": "fa-regular fa-calendar-check",
-            "title": "Scheduling & reminders",
-            "text": "Bookings and automatic reminders, so fewer no-shows.",
-            "for": "Studios, clinics, tutors"
-        },
-        {
-            "icon": "fa-solid fa-file-invoice-dollar",
-            "title": "Invoicing & reports",
-            "text": "Invoices from finished jobs and a weekly report you don't have to build.",
-            "for": "Any service business"
+    "problems": {
+        "lead": "A few examples of what I build. Your business is different, so your tool will be too.",
+        "items": [
+            {
+                "images": {
+                    "before": "/images/small-business/schedule-before.webp",
+                    "after": "/images/small-business/schedule-after.webp"
+                },
+                "problem": "Only one person understands the schedule.",
+                "problem_text": "It lives in a spreadsheet, and everyone else keeps asking.",
+                "title": "Everyone sees the same schedule.",
+                "text": "One shared calendar with automatic reminders, so fewer no-shows and fewer phone calls.",
+                "tool": "Scheduling & reminders",
+                "icon": "fa-regular fa-calendar-check"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/jobs-before.webp",
+                    "after": "/images/small-business/jobs-after.webp"
+                },
+                "problem": "Jobs slip through the cracks.",
+                "problem_text": "Someone's out sick, and nobody knows what was promised.",
+                "title": "Every job stays on track.",
+                "text": "See each job, its status, and who's on it, so nothing depends on one person's memory.",
+                "tool": "Job & order tracker",
+                "icon": "fa-solid fa-clipboard-list"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/customers-before.webp",
+                    "after": "/images/small-business/customers-after.webp"
+                },
+                "problem": "Customer info is everywhere.",
+                "problem_text": "It's scattered across texts, emails, and notebooks.",
+                "title": "Find any customer in seconds.",
+                "text": "Contacts, notes, and history, all in one place.",
+                "tool": "Customer CRM",
+                "icon": "fa-solid fa-address-book"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/invoices-before.webp",
+                    "after": "/images/small-business/invoices-after.webp"
+                },
+                "problem": "Paperwork eats your whole Friday.",
+                "problem_text": "Invoices and reports get built by hand, every week.",
+                "title": "Paperwork that does itself.",
+                "text": "Invoices are made from finished jobs, and reports are ready when you need them.",
+                "tool": "Invoicing & reports",
+                "icon": "fa-solid fa-file-invoice-dollar"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/website-before.webp",
+                    "after": "/images/small-business/website-after.webp"
+                },
+                "problem": "Customers can't book without calling.",
+                "problem_text": "If they can't find you online or you miss the call, they move on.",
+                "title": "Customers book any time.",
+                "text": "A website that brings people in and lets them book or order day or night.",
+                "tool": "Website & online booking",
+                "icon": "fa-solid fa-globe"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/kiosk-before.webp",
+                    "after": "/images/small-business/kiosk-after.webp"
+                },
+                "problem": "Walk-ins wait in line.",
+                "problem_text": "Someone has to copy their details onto paper first.",
+                "title": "Check-in takes seconds.",
+                "text": "A tablet at the front desk handles check-in, sign-ups, or orders.",
+                "tool": "Kiosk & check-in",
+                "icon": "fa-solid fa-tablet-screen-button"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/inventory-before.webp",
+                    "after": "/images/small-business/inventory-after.webp"
+                },
+                "problem": "You run out of stock by surprise.",
+                "problem_text": "You find out when a customer asks for it.",
+                "title": "Know what to reorder before you run out.",
+                "text": "See stock levels at a glance, with no counting by hand.",
+                "tool": "Inventory & supplies",
+                "icon": "fa-solid fa-boxes-stacked"
+            },
+            {
+                "images": {
+                    "before": "/images/small-business/automation-before.webp",
+                    "after": "/images/small-business/automation-after.webp"
+                },
+                "problem": "You type the same thing three times.",
+                "problem_text": "Every order goes into three different places.",
+                "title": "Enter it once, and you're done.",
+                "text": "Your tools share data automatically, and routine work runs itself.",
+                "tool": "Automations & AI",
+                "icon": "fa-solid fa-gears"
+            }
+        ],
+        "more": {
+            "title": "Something else?",
+            "text": "These are only examples. Tell me what slows you down, and I'll tell you if a tool can fix it."
         }
-    ],
+    },
     "steps": [
         {
-            "title": "Free 30-minute call",
-            "text": "You show me how things work today. I tell you what I'd build and what it costs."
+            "icon": "fa-regular fa-pen-to-square",
+            "title": "Tell me about your business",
+            "text": "Fill out a short form. It takes about two minutes and helps me come prepared.",
+            "free": true
         },
         {
-            "title": "Build in 2–4 weeks",
-            "text": "Fixed scope and price. You try it along the way, so there are no surprises at the end."
+            "icon": "fa-regular fa-handshake",
+            "title": "Meet",
+            "text": "We meet in person in Jacksonville, or talk on the phone. You show me how things work today.",
+            "free": true
         },
         {
-            "title": "Support after launch",
-            "text": "Hosting, backups, fixes, and small changes, with a real person who answers."
+            "icon": "fa-solid fa-file-signature",
+            "title": "Quote",
+            "text": "A fixed scope and price in writing. No obligation.",
+            "free": true
+        },
+        {
+            "icon": "fa-solid fa-screwdriver-wrench",
+            "title": "Build",
+            "text": "1–4 weeks. You try it along the way, so there are no surprises at the end.",
+            "free": false
+        },
+        {
+            "icon": "fa-solid fa-life-ring",
+            "title": "Support",
+            "text": "Hosting, backups, fixes, and small changes, with a real person who answers.",
+            "free": false
         }
     ],
     "about": [
-        "I'm Alex, a software developer in Jacksonville with 15+ years of building web applications and business systems.",
-        "I work with small businesses directly and I'm happy to meet in person. You get one person who knows your business and your software."
+        "I'm Alex, a software developer in Jacksonville with 25+ years of building websites, web applications, and business systems.",
+        "I work with small businesses directly and prefer to meet in person. You get one person who knows your business and your software."
     ],
     "pricing": {
-        "lead": "Built for small business budgets.",
+        "title": "Simple pricing. No surprises.",
+        "lead": "Know what you're paying before we start.",
         "items": [
             {
-                "label": "Custom tool",
+                "label": "Free review & quote",
+                "value": "$0",
+                "note": "Tell me how your business works. I'll suggest improvements and give you a written quote. No obligation."
+            },
+            {
+                "label": "Custom software",
+                "prefix": "Typically",
                 "value": "$2,000–$5,000",
-                "note": "One-time project price, agreed before work starts."
+                "note": "One-time project price. Built around your business, not the other way around.",
+                "small": "Larger projects quoted individually."
             },
             {
                 "label": "Support",
-                "value": "from $200/mo",
+                "value": "from $149/mo",
                 "note": "Hosting, backups, fixes, and small changes."
+            }
+        ],
+        "promises": [
+            {
+                "title": "No surprise charges.",
+                "text": "You approve the project scope and price before work begins."
+            },
+            {
+                "title": "You own your software.",
+                "text": "Your data and your tool belong to you."
+            },
+            {
+                "title": "Start small, grow later.",
+                "text": "Build what you need today and add features as your business grows."
             }
         ]
     },
-    "faq": [
-        {
-            "q": "Is this only for bigger companies?",
-            "a": "No. It's built for teams of 1–50. Most of my clients are owners who do half the admin themselves."
-        },
-        {
-            "q": "Can I change it later?",
-            "a": "Yes. Small changes are included in support. Bigger features are quoted separately, at a fixed price."
-        },
-        {
-            "q": "Do I own it?",
-            "a": "Yes. Your data and your tool belong to you."
-        },
-        {
-            "q": "What if you disappear?",
-            "a": "The code is built on standard, widely used tools that other developers know. You get the code and your data, so anyone can take it over."
-        }
-    ]
+    "closing": {
+        "title": "Have something in mind?",
+        "text": "Tell me what you're trying to improve. I'll let you know what's possible and what it might cost.",
+        "cta": "Let's Talk About Your Business"
+    },
+    "form": {
+        "team_sizes": [
+            "Just me",
+            "2–10",
+            "11–50",
+            "50+"
+        ]
+    }
 }
