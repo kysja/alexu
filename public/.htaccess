@@ -3,6 +3,11 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+    # /resume is both a route and a folder of PDFs; don't redirect to /resume/
+    <IfModule mod_dir.c>
+        DirectorySlash Off
+    </IfModule>
+
     RewriteEngine On
 
     # Handle Authorization Header
@@ -19,7 +24,7 @@
     RewriteRule ^ %1 [L,R=301]
 
     # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # Only real files are served directly, so directories (public/resume) fall through to Laravel
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
