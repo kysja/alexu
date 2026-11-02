@@ -13,7 +13,7 @@ defineProps({
     <Head :title="details.title" />
 
     <header class="page-header">
-        <Link class="arrow-link mb-4" :href="`/work/${section.slug}`">
+        <Link class="arrow-link mb-4" :href="`/work?section=${section.slug}`">
             <i class="fa-solid fa-arrow-left"></i>{{ section.title }}
         </Link>
 

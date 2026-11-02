@@ -24,30 +24,17 @@ class WorkTest extends TestCase
                 ->component('Work/Index')
                 ->has('sections', count(SiteData::get('work_sections')))
                 ->has('sections.0.lead')
+                ->has('projects', count(SiteData::get('portfolio')))
                 ->where('sections', fn ($sections) => collect($sections)->sum('count') === count(SiteData::get('portfolio'))));
     }
 
-    public function test_section_page_lists_its_projects(): void
+    public function test_old_section_urls_redirect_to_the_filtered_work_page(): void
     {
-        $projects = collect(SiteData::get('portfolio'))->where('type', 'websites');
-
-        $this->get('/work/websites')
-            ->assertStatus(200)
-            ->assertInertia(fn (Assert $page) => $page
-                ->component('Work/Section')
-                ->where('section.title', 'Websites')
-                ->has('section.projects', $projects->count()));
-    }
-
-    public function test_every_section_page_renders(): void
-    {
-        // Includes sections that have no projects yet, since the Work page links to all of them.
+        // Includes sections that have no projects yet, since all of them used to have a page.
         foreach (SiteData::get('work_sections') as $section) {
             $this->get("/work/{$section['slug']}")
-                ->assertStatus(200)
-                ->assertInertia(fn (Assert $page) => $page
-                    ->component('Work/Section')
-                    ->where('section.slug', $section['slug']));
+                ->assertRedirect("/work?section={$section['slug']}")
+                ->assertStatus(301);
         }
     }
 
@@ -105,6 +92,10 @@ class WorkTest extends TestCase
     {
         foreach (SiteData::get('portfolio') as $project) {
             $this->assertFileExists(public_path("images/portfolio/{$project['image']}"));
+
+            if (isset($project['full'])) {
+                $this->assertFileExists(public_path("images/portfolio/{$project['full']}"));
+            }
 
             if (isset($project['page'])) {
                 $details = SiteData::get("work/{$project['page']}");

@@ -1,0 +1,9 @@
+[
+    {
+        "slug": "ai-search-assistant",
+        "title": "Building an AI search assistant that only recommends what exists",
+        "date": "2026-10-31",
+        "summary": "A K-12 library of about 1,900 activities had a discovery problem. I built a fixed pipeline with two narrow jobs for the language model, so teachers can describe a classroom need in plain language and get real activities back.",
+        "stack": ["Laravel", "Qdrant", "OpenRouter", "Embeddings", "Vue"]
+    }
+]

@@ -24,8 +24,8 @@ class ExampleTest extends TestCase
         return [
             'home' => ['/', 'Home'],
             'work' => ['/work', 'Work/Index'],
-            'notes' => ['/notes', 'Notes'],
-            'lab' => ['/lab', 'Lab'],
+            'notes' => ['/notes', 'Notes/Index'],
+            // 'lab' => ['/lab', 'Lab'],
             'resume' => ['/resume', 'Resume'],
             'contact' => ['/contact', 'Contact'],
         ];

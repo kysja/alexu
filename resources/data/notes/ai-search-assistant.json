@@ -1,0 +1,78 @@
+{
+    "blocks": [
+        { "type": "p", "html": "I built an AI assistant that helps teachers on a K-12 learning platform find classroom activities. The first version of the chat appeared in May 2026, semantic search followed a few days later, and it was released as a beta that June. This is how it works and why I built it this way." },
+
+        { "type": "h2", "text": "The problem" },
+        { "type": "p", "html": "The platform has a library of digital activities that run in the browser. It has grown to about 1,900 activities across five formats (interactive readers, lessons, games, escape rooms and field trips), with more than 1,300 tags." },
+        { "type": "p", "html": "A library this size creates a discovery problem. The right activity may exist, but a teacher still has to find it. Keyword search and filters work when you already know the terms a resource uses. Teachers often start from a classroom need instead: “engaging ELA for reluctant readers” or “history and culture resources for 4th grade”. Those requests combine a grade, a subject, a goal and a teaching style, and the useful result may not contain any of those exact words." },
+        { "type": "p", "html": "The assistant lets a teacher describe that need in plain language, then refine it in conversation: “make it shorter” or “for 4th grade instead”." },
+
+        { "type": "h2", "text": "Why not just add a chatbot?" },
+        { "type": "p", "html": "A general chatbot pointed at this problem has three weaknesses. It can invent activities that don’t exist, it can offer things the product doesn’t have, and it would have to reason over the catalog on every request. So I built a fixed pipeline and gave the language model two narrow jobs: understand the request and explain the results." },
+        { "type": "p", "html": "The agents have no tools and no freedom to decide what to do next. The application controls the flow and the model works inside it. That makes the system cheaper to reason about, easier to test and much harder to send off track. It’s a retrieval-augmented generation (RAG) design, meaning the model answers from records the application retrieved for it, with a deliberately small role for the model." },
+
+        { "type": "h2", "text": "How it works" },
+        { "type": "p", "html": "The application is built with Laravel, and each agent is a small PHP class written with the Laravel AI SDK. Every teacher message passes through the same steps:" },
+        { "type": "pipeline" },
+        { "type": "p", "html": "<strong>1. Understand the request.</strong> The first agent turns the conversation into structured data. It maps “third grade” to <code>[\"3\"]</code>, “upper elementary” to <code>[\"4\",\"5\"]</code> and “short” to a 20-minute limit. A follow-up changes only what the teacher changed, and a new topic replaces the search. An illustrative result:" },
+        { "type": "code", "code": "{\n  \"grades\": [\"4\"],\n  \"subjects\": [\"Social Studies\", \"History\"],\n  \"topics\": [\"culture\"],\n  \"keywords\": [\"traditions\", \"communities\", \"heritage\"],\n  \"duration_max\": 20\n}" },
+        { "type": "p", "html": "<strong>2. Decide whether to search.</strong> Questions about billing, passwords or rosters, and requests to write a lesson plan, get a short pointer to the Help page. Very vague requests get one friendly clarifying question. Greetings and small talk aren’t treated as out of scope." },
+        { "type": "p", "html": "<strong>3. Retrieve candidates.</strong> The search splits the request into two kinds of information. Grade and duration are hard constraints, so the Qdrant vector database applies them as filters. Softer signals such as topic, theme, learning style and tone become the text used for semantic search. An activity can match on meaning without matching every facet exactly, while a 4th-grade request still can’t return a resource outside that grade." },
+        { "type": "p", "html": "Semantic search works by converting text into embeddings: lists of numbers that place similar meanings close together. Qdrant finds the nearest activities by cosine similarity. MySQL then loads the matching records, removes inactive ones and restores Qdrant’s relevance order. Search asks for 24 matches to allow for inactive records, then keeps up to 12." },
+        { "type": "p", "html": "<strong>4. Recommend and explain.</strong> The second agent receives those candidates and selects the 2–5 that fit best. It explains each choice in terms of what the teacher asked for, like a knowledgeable colleague would. The Vue interface, which runs inside the Inertia teacher app, shows the reply with activity cards containing the cover image, format, grade range, duration and summary." },
+
+        { "type": "figure", "image": "ai-assistant-chat.png", "caption": "A chat exchange showing a reply with activity cards." },
+
+        { "type": "h2", "text": "Preparing the catalog" },
+        { "type": "p", "html": "Search quality depends mostly on what gets indexed. Raw activity descriptions weren’t written for this purpose, so I added an offline enrichment step." },
+        { "type": "p", "html": "An Artisan command sends each activity to a dedicated agent, including its description, objectives, tags, reading level and the questions and answers from up to 20 slides. The agent returns structured metadata: a summary, topics, themes, keywords, classroom uses, learning objectives, learning styles, emotional tone, engagement style and grade focus. It also writes a dense search text containing synonyms and related concepts." },
+        { "type": "p", "html": "That search text is what gets embedded with OpenAI’s <code>text-embedding-3-small</code> at 1,536 dimensions and stored in Qdrant, with grade and duration attached as filterable data. MySQL holds the metadata in its own table, so the original content stays untouched." },
+        { "type": "p", "html": "The command writes to Qdrant before it writes the database row. If embedding or indexing fails, no row exists, and the next <code>--missing</code> run retries that activity. A separate command rebuilds all vectors from the stored search text, so moving to a new embedding model doesn’t mean paying to analyze the whole catalog again." },
+        { "type": "p", "html": "The metadata also proved useful beyond chat. It feeds an admin tag suggestion tool that runs without any API calls. About 75% of the tags found through AI metadata had already been applied by hand, which gives editors reason to trust the rest." },
+
+        { "type": "h2", "text": "Decisions that made it reliable" },
+        { "type": "p", "html": "<strong>The server enforces that recommendations are real.</strong> The prompt tells the model to choose only from the candidates, but the code doesn’t rely on that. Every returned ID is checked against the retrieved list, and anything else is dropped. A hallucinated activity can’t become a card on the page." },
+        { "type": "p", "html": "<strong>The model is told what the product isn’t.</strong> Every resource is digital, with no printables, worksheets or PDFs. A general model will readily offer those, so both agents are told these facts. A request for a worksheet searches on the underlying topic and grade, and the reply points to the closest digital resource." },
+        { "type": "p", "html": "<strong>Model output is treated as untrusted input.</strong> Through this provider, the JSON schema works only as guidance. The model sometimes wraps its reply in an unexpected object, returns a list as a JSON string or sends <code>\"false\"</code> as text. A small normalization layer handles these cases, so the teacher never sees raw JSON. This was the least glamorous part of the project and one of the most important." },
+        { "type": "p", "html": "<strong>Conversation memory is structured.</strong> Each turn carries the recent messages and the previous search as data. The session keeps 20 messages and the prompts use the latest 8, so follow-ups stay cheap and predictable. An out-of-scope question doesn’t erase the search, so the teacher can pick up where they left off." },
+        { "type": "p", "html": "<strong>Failures stay contained.</strong> If the vector search finds no matches, a keyword search over names, descriptions and AI metadata takes over. If a request has only hard constraints, the system browses by those filters. Any unexpected error, including a failed connection to Qdrant, is reported and the teacher gets a friendly retry message. A failed log write never breaks the chat." },
+        { "type": "p", "html": "<strong>Each part is replaceable.</strong> All model traffic goes through OpenRouter, and changing an agent’s model is a one-line attribute change. I’ve used this to move the agents to DeepSeek V4 Flash and later to a dated version of that model. A normal turn uses two LLM calls and one embedding request, and the clarify and out-of-scope paths stop after the first call." },
+        { "type": "p", "html": "The same tools now also power activity idea generation, tag vocabulary cleanup and cancellation feedback themes." },
+
+        { "type": "h2", "text": "How teachers reach it" },
+        { "type": "p", "html": "The assistant appears where a search can fall short. The keyword search panel offers “Ask the AI Assistant about ‘…’”, and the activity library has an “Ask the AI Assistant” button. Both pass along what the teacher already typed, so the question is sent automatically. While a reply is being prepared, the interface shows progress messages such as “Searching activities…”. The assistant is labeled Beta and says results may not always be perfect." },
+
+        { "type": "figure", "image": "ai-assistant-search.png", "small": true, "caption": "The “Ask the AI Assistant” option in the search panel." },
+
+        { "type": "h2", "text": "Reviewing how it’s used" },
+        { "type": "p", "html": "AI features can’t be fully judged from a test suite, so every conversation is logged separately from the prompt memory. A Blade admin page shows recent chats inline with their recommended activities, including any that have since been archived, and supports searching by message text or teacher. Teachers’ real wording shows where the catalog, the prompts or the search need work." },
+        { "type": "p", "html": "Automated PHPUnit tests use a fake Qdrant service to cover behavior such as keeping vector matches when soft facets don’t match exactly, and falling back to keyword search when the vector search finds nothing." },
+
+        { "type": "h2", "text": "Limits and what could come next" },
+        { "type": "p", "html": "The assistant has real limits today:" },
+        { "type": "ul", "items": [
+            "It’s still in beta, and I judge quality by reviewing real conversations. There’s no formal relevance benchmark yet.",
+            "New activities enter the index when the enrichment command is run, not automatically when they’re published.",
+            "Replies arrive all at once rather than streaming.",
+            "Follow-up ideas are limited to ways of refining the search. They’re shown as text and can’t be clicked yet."
+        ] },
+        { "type": "p", "html": "Natural next steps would be indexing on publish, streaming replies, clickable refinements and a benchmark set of real teacher queries for measuring retrieval quality." },
+
+        { "type": "h2", "text": "Technologies used" },
+        { "type": "skills", "groups": [
+            { "title": "Backend", "list": ["PHP 8.4", "Laravel 13"] },
+            { "title": "AI framework", "list": ["Laravel AI SDK 0.6"] },
+            { "title": "LLM gateway", "list": ["OpenRouter"] },
+            { "title": "LLM", "list": ["DeepSeek V4 Flash"] },
+            { "title": "Embeddings", "list": ["OpenAI text-embedding-3-small"] },
+            { "title": "Vector database", "list": ["Qdrant"] },
+            { "title": "Relational database", "list": ["MySQL 8"] },
+            { "title": "Frontend", "list": ["Vue 3", "Inertia.js 3"] },
+            { "title": "Frontend tooling", "list": ["Vite 6", "Bootstrap 5", "Axios", "Ziggy"] },
+            { "title": "Admin", "list": ["Laravel Blade"] },
+            { "title": "Testing", "list": ["PHPUnit 12"] },
+            { "title": "Infrastructure", "list": ["Docker", "Apache"] },
+            { "title": "Techniques", "list": ["Retrieval-augmented generation", "Semantic search", "Embeddings", "Structured output", "Metadata filtering", "Intent extraction", "Conversational state", "Guardrails", "LLM observability"] }
+        ] }
+    ]
+}

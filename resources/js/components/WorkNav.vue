@@ -1,23 +1,34 @@
 <script setup>
-import { Link, usePage } from '@inertiajs/vue3';
-
 defineProps({
     sections: { type: Array, required: true },
+    active: { type: String, default: null },
+    total: { type: Number, required: true },
 });
 
-const page = usePage();
+defineEmits(['select']);
 </script>
 
 <template>
-    <nav class="work-nav" aria-label="Work sections">
-        <Link
+    <div class="work-nav" role="group" aria-label="Filter work by section">
+        <button
+            type="button"
+            class="work-nav__link"
+            :class="{ active: active === null }"
+            :aria-pressed="active === null"
+            @click="$emit('select', null)"
+        >
+            All<span class="work-nav__count">{{ total }}</span>
+        </button>
+        <button
             v-for="section in sections"
             :key="section.slug"
+            type="button"
             class="work-nav__link"
-            :class="{ active: page.url === `/work/${section.slug}` }"
-            :href="`/work/${section.slug}`"
+            :class="{ active: active === section.slug }"
+            :aria-pressed="active === section.slug"
+            @click="$emit('select', section.slug)"
         >
             {{ section.title }}<span class="work-nav__count">{{ section.count }}</span>
-        </Link>
-    </nav>
+        </button>
+    </div>
 </template>

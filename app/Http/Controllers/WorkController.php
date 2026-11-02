@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Support\SiteData;
 use App\Support\WorkSections;
+use Illuminate\Http\RedirectResponse;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -13,18 +14,14 @@ class WorkController extends Controller
     {
         return Inertia::render('Work/Index', [
             'sections' => WorkSections::summaries(),
+            'projects' => SiteData::get('portfolio'),
         ]);
     }
 
-    public function section(string $section): Response
+    // Sections used to have their own pages, so keep those URLs working.
+    public function section(string $section): RedirectResponse
     {
-        // The route only matches known section slugs, so this always finds one.
-        $sections = WorkSections::all();
-
-        return Inertia::render('Work/Section', [
-            'nav' => WorkSections::summaries($sections),
-            'section' => $sections->firstWhere('slug', $section),
-        ]);
+        return to_route('work', ['section' => $section], 301);
     }
 
     public function show(string $slug): Response

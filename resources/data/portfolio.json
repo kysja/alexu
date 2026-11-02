@@ -1,5 +1,46 @@
 [
     {
+        "title": "School Photo Processing Pipeline",
+        "type": "ai",
+        "image": "photo-pipeline.png",
+        "description": "A pipeline that takes a batch of school student photos from raw files to linked, reviewed results. It classifies every photo by type, checks portraits for glasses, matches faces against sitcards, crops the sitcards and reads their receipt numbers and details, then links the results to an external system. A dashboard follows each batch through the steps, with progress counts, re-run and clear controls for every step, and warnings when numbers do not add up."
+    },
+    {
+        "title": "Student & Faculty Management System",
+        "type": "web-apps",
+        "image": "students-faculty.png",
+        "description": "A system for a school photography company to manage students and faculty across its schools and contracts. Staff can search the records, filter them by grade, teacher or order number, and quickly find who has a receipt, photos or web photos on file. Duplicate and deleted records have their own views, and the results can be turned into reports or exported."
+    },
+    {
+        "title": "ShowCard – Full-Screen Text Display for Android",
+        "type": "tools",
+        "image": "showcard.png",
+        "frame": "device",
+        "github": "showcard",
+        "stack": [
+            "PHP",
+            "Laravel",
+            "NativePHP",
+            "Kotlin",
+            "SQLite"
+        ],
+        "description": "ShowCard is an Android app that saves you from spelling your name or email out loud when someone asks for it in person. Instead, it shows your saved text full screen, so you can just hold up your phone. The text resizes automatically to fit the landscape screen, with a choice of fonts and colors. Built with PHP and NativePHP, it renders real native screens, stores everything on the device and works offline. A small custom Kotlin plugin handles screen rotation."
+    },
+    {
+        "title": "k5qref - Quick Reference Snippets for Windows",
+        "type": "tools",
+        "image": "k5qref.png",
+        "frame": "plain",
+        "github": "k5qref",
+        "stack": [
+            "Python",
+            "Tkinter",
+            "pystray",
+            "JSON"
+        ],
+        "description": "k5qref is a small Windows tray utility for the commands and text you keep looking up. Press a global hotkey, search your saved snippets and select one, and it is pasted into the window you were using. Snippets are organized into tabs and groups, and can be managed in a built-in setup window or directly in a JSON file. Searching and selecting work entirely from the keyboard."
+    },
+    {
         "title" : "School Years - Memory Book - School Keepsake",
         "type" : "web-apps",
         "link" : "https://schoolkeepsake.com/",
@@ -13,6 +54,7 @@
         "type" : "web-apps",
         "link" : "https://bunnybooks.alexu.dev",
         "image" : "bunnybooks.png",
+        "full": "bunnybooks/01.png",
         "stack" : [ "Vue 3", "PHP", "MySQL", "Bootstrap", "JavaScript" ],
         "page" : "bunnybooks",
         "github" : "bunnybooks",
@@ -23,6 +65,7 @@
         "title" : "Data Management System",
         "type" : "web-apps",
         "image" : "dbac.png",
+        "full": "dbac/01.png",
         "stack" : [ "PHP", "HTML", "CSS", "Bootstrap", "JavaScript" ],
         "page" : "dbac",
         "description" : "Web-based Data Management System for a Company in the Construction Sector. The system has the ability to bring in data from numerous CSV files, clean the data, and eliminate any duplicates. It can also gather extra data by utilizing third-party API services."
@@ -43,6 +86,7 @@
         "type" : "websites",
         "link" : "https://palliq.alexu.dev",
         "image" : "palliq.png",
+        "full": "palliq/01.png",
         "stack" : [ "Python", "Flask", "MySQL", "JavaScript", "HTML", "CSS", "Websockets" ],
         "page" : "palliq",
         "description" : "The website provides three different options for customers to purchase pallets: Buy Now, Auction, and Offline sales at the warehouse. The project was built using the Flask framework (Python). The real-time bidding achieved through the use of WebSockets."
@@ -81,6 +125,7 @@
         "title" : "K5Calc - Simple Windows Keyboard Calculator",
         "type" : "tools",
         "image" : "k5calc.png",
+        "frame": "plain",
         "github" : "k5calc",
         "stack" : [ "Python", "Tkinter", "SLY" ],
         "description" : "K5Calc is a simple Windows keyboard calculator built with Python and the Tkinter framework. It allows you to perform basic arithmetic calculations using only your keyboard. For lexing and parsing, the SLY library was used"

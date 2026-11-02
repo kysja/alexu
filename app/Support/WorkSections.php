@@ -23,9 +23,9 @@ class WorkSections
     /**
      * Sections with a project count in place of the projects themselves.
      */
-    public static function summaries(?Collection $sections = null): array
+    public static function summaries(): array
     {
-        return ($sections ?? self::all())
+        return self::all()
             ->map(fn (array $section) => [
                 ...collect($section)->except('projects'),
                 'count' => count($section['projects']),
