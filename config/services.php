@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    // GA4 Measurement ID (public). The tag only loads in production; set the env var empty to disable it.
+    'google_analytics' => [
+        'id' => env('GOOGLE_ANALYTICS_ID', 'G-N165LBJ1YZ'),
+    ],
+
 ];
