@@ -26,6 +26,7 @@ const logos = [
     ['linux', { icon: 'fa-brands fa-linux', color: '#14232b' }],
     ['openai', { img: 'openai' }],
     ['codex', { img: 'openai' }],
+    ['grok', { icon: 'fa-solid fa-robot', color: '#14232b' }],
     ['anthropic', { img: 'anthropic' }],
     ['claude', { icon: 'fa-brands fa-claude', color: '#d97757' }],
     ['gitlab', { img: 'gitlab' }],

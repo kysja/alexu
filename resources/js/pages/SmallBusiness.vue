@@ -267,9 +267,8 @@ const submit = () => {
                         </div>
                         <div class="col-12 d-flex flex-wrap align-items-center gap-3">
                             <button class="btn sb-cta" type="submit" :disabled="form.processing">
-                                Let's Talk About My Business<i class="fa-solid fa-arrow-right"></i>
+                                Submit<i class="fa-solid fa-arrow-right"></i>
                             </button>
-                            <span class="text-muted-ink small">Free, no obligation.</span>
                         </div>
                     </div>
                 </form>

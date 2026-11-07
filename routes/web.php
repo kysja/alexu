@@ -22,5 +22,5 @@ Route::get('/resume', ResumeController::class)->name('resume');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/small-business', [PageController::class, 'smallBusiness'])->name('small-business');
 Route::post('/small-business', [InquiryController::class, 'store'])
-    ->middleware('throttle:5,10')
+    ->middleware('throttle:5,60')
     ->name('small-business.inquiry');
